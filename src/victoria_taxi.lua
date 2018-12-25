@@ -24,16 +24,16 @@ for k, v in pairs(fields) do
     end
 end
 
-sel = self.ask_menu(text, selections)
+selection = self.ask_menu(text, selections)
 
-if self.ask_yes_no("You don't have anything else to do here, huh? Do you really want to go to #b#m" .. sel .. "##k? It'll cost you #b" .. costStr .." mesos#k.") then
+if self.ask_yes_no("You don't have anything else to do here, huh? Do you really want to go to #b#m" .. selection .. "##k? It'll cost you #b" .. costStr .." mesos#k.") then
     if target.money < cost then
         self.say("You don't have enough mesos. Sorry to say this, but without them, you won't be able to ride the cab.")
         return
     end
 
     target.money = target.money - cost
-    target.field = sel
+    target.field = selection
 else
     self.say("There's a lot to see in this town, too. Come back and find us when you need to go to a different town.")
 end
