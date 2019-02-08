@@ -9,11 +9,11 @@ if target.field == 200000100 then
     })
 
     if selection == 0 then
-        self.say("Are you trying to go to Victoria Island? Oh, it's a beautiful island with an abundance of beautiful forests. The ship that goes to Victoria #bleaves every " .. target.as_continent(0).term .." minutes on the hour#k.")
+        self.say("Are you trying to go to Victoria Island? Oh, it's a beautiful island with an abundance of beautiful forests. The ship that goes to Victoria #bleaves every " .. target.as_continent(200000111).term .." minutes on the hour#k.")
     elseif selection == 1 then
-        self.say("Are you heading towards Ludibrium in Lake Ludus? It's a fun little town that mainly consists of toys. The ship that heads to Ludibrium #bleaves at the top of the hour, and every " .. target.as_continent(2).term .. " minutes afterwards#k.")
+        self.say("Are you heading towards Ludibrium in Lake Ludus? It's a fun little town that mainly consists of toys. The ship that heads to Ludibrium #bleaves at the top of the hour, and every " .. target.as_continent(200000121).term .. " minutes afterwards#k.")
     elseif selection == 2 then
-        self.say("Are you heading towards Leafre of Minar Forest? It's a cozy little town where the halflingers reside. The ship that heads to Leafre #bleaves at the top of the hour, and every " .. target.as_continent(6).term .. " minutes afterwards#k.")
+        self.say("Are you heading towards Leafre of Minar Forest? It's a cozy little town where the halflingers reside. The ship that heads to Leafre #bleaves at the top of the hour, and every " .. target.as_continent(200000131).term .. " minutes afterwards#k.")
     elseif selection == 3 then
         -- TODO
         -- "Are you heading towards Mu Lung in the Mu Lung Temple? I'm sorry, but there's no ship that flies from Orbis to Mu Lung. There is another way to get there, though. There's a #bCrane that runs a cab service for 1 that's always avaible#k, so you'll get there as soon as you wish."
