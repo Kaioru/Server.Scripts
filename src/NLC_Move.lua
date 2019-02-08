@@ -18,5 +18,5 @@ if contimove.state == 0x1 then
         self.say("You must have some business to take care of here, right?")
     end
 else 
-    self.say("We will begin boarding 1 minutes before the takeoff. Please be patient and wait for a few minutes. Be aware that the subway will take off right on time, and we stop receiving tickets 1 minute before that, so please make sure to be here on time.")
+    self.say("We will begin boarding " .. contimove.wait .. " minutes before the takeoff. Please be patient and wait for a few minutes. Be aware that the subway will take off right on time, and we stop receiving tickets 1 minute before that, so please make sure to be here on time.")
 end
