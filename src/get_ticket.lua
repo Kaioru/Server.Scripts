@@ -1,4 +1,9 @@
-contimove = target.as_continent(0)
+contimove = target.as_continent()
+
+if contimove == nil then
+    self.say("It looks like the flight is not in operation yet..")
+    return
+end
 
 if contimove.state == 0x1 then
     -- TODO

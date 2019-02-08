@@ -1,4 +1,4 @@
-contimove = target.as_continent(8)
+contimove = target.as_continent()
 inventory = target.as_inventory()
 
 if contimove.state == 0x1 then
