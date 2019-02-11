@@ -1,3 +1,6 @@
+-- TODO
+-- Edelstein
+
 if target.field == 200000100 then
     selection = self.ask_menu("Hello, I'm the information guide for Orbis Station. Which of our destinations would you like to know more about?", {
         [0] = "Victoria Island",
