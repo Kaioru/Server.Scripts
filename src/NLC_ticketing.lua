@@ -40,15 +40,11 @@ elseif target.field == 103000100 then
             self.say("You must have some business to take care of here, right?")
         end
     end
-elseif target.field == 600010002 then
-    if self.ask_yes_no("Do you want to go back to New Leaf City subway station now?") then
-        target.field = 600010001
-    else
-        self.say("Okay, Plase wait~!")
-    end
-elseif target.field == 600010004 then
-    if self.ask_yes_no("Do you want to go back to Kerning City subway station now?") then
-        target.field = 103000100
+else
+    local to = target.field == 600010002 and "New Leaf City" or "Kerning City"
+    
+    if self.ask_yes_no("Do you want to go back to " .. to .. " subway station now?") then
+        target.field = target.as_continent().start_ship_move_field
     else
         self.say("Okay, Plase wait~!")
     end
