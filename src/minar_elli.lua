@@ -1,4 +1,4 @@
-inventory = target.as_inventory()
+inventory = target.get_inventory()
 field = target.field == 101030100 and 240010100 or 101030100
 portal = target.field == 101030100 and "elli00" or "minar00"
 

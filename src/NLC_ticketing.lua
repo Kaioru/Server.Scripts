@@ -1,4 +1,4 @@
-inventory = target.as_inventory()
+inventory = target.get_inventory()
 
 if target.field == 600010001 then
     selection = self.ask_menu("Hello. Would you like to buy a ticket for the subway?", {
@@ -29,7 +29,7 @@ elseif target.field == 103000100 then
         ticket = target.level <= 10 and 4031710 or 4031711
         cost = target.level <= 10 and 1000 or 5000
 
-        if self.ask_yes_no("The ride to New Leaf City of Masteria takes off every " .. target.as_continent().term .. " minutes, beginning on the hour, and it'll cost you #b" .. cost .. " mesos#k. Are you sure you want to purchase #b#t" .. ticket .. "##k?") then
+        if self.ask_yes_no("The ride to New Leaf City of Masteria takes off every " .. target.get_continent().term .. " minutes, beginning on the hour, and it'll cost you #b" .. cost .. " mesos#k. Are you sure you want to purchase #b#t" .. ticket .. "##k?") then
             if target.money >= cost and inventory.has_slot_for(ticket) then
                 target.money = target.money - cost
                 inventory.add(ticket)
@@ -44,7 +44,7 @@ else
     local to = target.field == 600010002 and "New Leaf City" or "Kerning City"
     
     if self.ask_yes_no("Do you want to go back to " .. to .. " subway station now?") then
-        target.field = target.as_continent().start_ship_move_field
+        target.field = target.get_continent().start_ship_move_field
     else
         self.say("Okay, Plase wait~!")
     end

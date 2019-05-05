@@ -1,5 +1,5 @@
-contimove = target.as_continent()
-inventory = target.as_inventory()
+contimove = target.get_continent()
+inventory = target.get_inventory()
 
 if contimove.state == 0x1 then
     -- TODO
