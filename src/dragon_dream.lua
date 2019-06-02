@@ -3,7 +3,7 @@ speaker = self.as_speaker(0x1)
 
 if quest.state == 0x1 then
     speaker.say({ 
-        "You, who are destined to be a Dragon Master...\r\n", 
+        "You, who are destined to be a Dragon Master...\r\nYou have finally arrived.", 
         "Go and fulfill your duties as the Dragon Master..." 
     })
 
