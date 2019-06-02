@@ -2,14 +2,20 @@ speakerJun = self.as_speaker(2159000)
 speakerUlrika = self.as_speaker(2159001)
 speakerVon = self.as_speaker(2159002)
 
-speakerUlrika.say("There you are, #h0#! You''re late. Get over here.")
-speakerVon.say("What was the hold up? You scared or something?")
-target.say("Don''t be ridiculous.")
-speakerJun.say("You''re not s-s-scared at all? I am, a little b-b-bit... The grown-ups warned us never to venture into the #bVerne Mines#k... Plus, there are all those #rBlack Wings#k around, watching us, I just know it.")
-speakerVon.say("We snuck here, Jun. No one saw us. No one''s watching us, okay? Come on, when else would we have ever gotten the chance to leave #bEdelstein#k? Don''t be a chicken.")
-speakerJun.say("But what if we get in trouble?")
-speakerUlrika.say("Jun, we''re already here. If we''re going to get in trouble, let''s at least have some fun first. Let''s play hide-and-seek!")
-target.say("Hide and seek?")
-speakerVon.say("Ugh, la-ame.")
-speakerUlrika.say("Don''t be a brat, Von. What? Are you scared to hide all by yourself in these big, bad caves? *snicker* \r\n#h0#, since you were late, you''re it. Count to 10 and then come find us. No peeking.")
+self.say({
+    speakerUlrika.get_speech("There you are, #h0#! You're late. Get over here."),
+    speakerVon.get_speech("What was the hold up? You scared or something?"),
+    
+    target.get_speech("Don't be ridiculous."),
+    
+    speakerJun.get_speech("You're not s-s-scared at all? I am, a little b-b-bit... The grown-ups warned us never to venture into the #bVerne Mines#k... Plus, there are all those #rBlack Wings#k around, watching us, I just know it."),
+    speakerVon.get_speech("We snuck here, Jun. No one saw us. No one's watching us, okay? Come on, when else would we have ever gotten the chance to leave #bEdelstein#k? Don't be a chicken."),
+    speakerJun.get_speech("But what if we get in trouble?"),
+    speakerUlrika.get_speech("Jun, we're already here. If we're going to get in trouble, let's at least have some fun first. Let's play hide-and-seek!"),
+    
+    target.get_speech("Hide and seek?"),
+    
+    speakerVon.get_speech("Ugh, la-ame."),
+    speakerUlrika.get_speech("Don't be a brat, Von. What? Are you scared to hide all by yourself in these big, bad caves? *snicker* \r\n#h0#, since you were late, you're it. Count to 10 and then come find us. No peeking.")
+})
 target.transfer_field(931000001, 1)
