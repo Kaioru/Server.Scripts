@@ -1,6 +1,3 @@
--- TODO
--- Edelstein
-
 speaker = self.as_speaker(2012006)
 locations = {
     {"Victoria Island", "Ship", 200000110},
@@ -9,6 +6,7 @@ locations = {
     {"Mu Lung", "Crane", 200000140},
     {"Ariant", "Genie", 200000150},
     {"Ereve", "Ship", 200000160},
+	{"Edelstein","Airship", 200000170}
 }
 selections = {}
 
