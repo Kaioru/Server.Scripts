@@ -8,7 +8,3 @@ if quest.state == 0x1 then
    target.say("Whos talking? Where are you?!")
    speaker.say("Look up.")
 end
-   speaker.say("Stay back. ")
-   speaker.say("How did you get there? This place is prohibited.")
-   target.say("Whos talking? Where are you?!")
-   speaker.say("Look up.")
