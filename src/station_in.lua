@@ -6,7 +6,7 @@ locations = {
     {"Mu Lung", "Crane", 200000140},
     {"Ariant", "Genie", 200000150},
     {"Ereve", "Ship", 200000160},
-	{"Edelstein","Airship", 200000170}
+    {"Edelstein","Airship", 200000170}
 }
 selections = {}
 

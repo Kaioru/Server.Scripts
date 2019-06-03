@@ -6,7 +6,7 @@ if target.field == 200000100 then
         [3] = "Mu Lung",
         [4] = "Ariant",
         [5] = "Ereve",
-		[6] = "Edelstein"
+	[6] = "Edelstein"
     })
 
     if selection == 0 then
@@ -16,13 +16,13 @@ if target.field == 200000100 then
     elseif selection == 2 then
         self.say("Are you heading towards Leafre of Minar Forest? It's a cozy little town where the halflingers reside. The ship that heads to Leafre #bleaves at the top of the hour, and every " .. target.as_continent(200000131).term .. " minutes afterwards#k.")
     elseif selection == 3 then
-		self.say("Are you heading towards Mu Lung in the Mu Lung Temple? I'm sorry, but there's no ship that flies from Orbis to Mu Lung. There is another way to get there, though. There's a #bCrane that runs a cab service for 1 that's always available#k, so you'll get there as soon as you wish.")
+	self.say("Are you heading towards Mu Lung in the Mu Lung Temple? I'm sorry, but there's no ship that flies from Orbis to Mu Lung. There is another way to get there, though. There's a #bCrane that runs a cab service for 1 that's always available#k, so you'll get there as soon as you wish.")
     elseif selection == 4 then
-		self.say("Are you heading towards Ariant in Nihal Desert? It's a town full of alchemists that live the life with vigor much like the scorching desert heat. The ship that heads to Ariant #bleaves at the top of the hour, and every 10 minutes afterwards#k.");
+	self.say("Are you heading towards Ariant in Nihal Desert? It's a town full of alchemists that live the life with vigor much like the scorching desert heat. The ship that heads to Ariant #bleaves at the top of the hour, and every 10 minutes afterwards#k.");
     elseif selection == 5 then
-		self.say("Are you heading towards Ereve? It's a beautiful island blessed with the presence of the Shinsoo the Holy Beast and Empress Cygnus. #bThe boat is for 1 person and it's always readily available#k so you can travel to Ereve fast.")
+	self.say("Are you heading towards Ereve? It's a beautiful island blessed with the presence of the Shinsoo the Holy Beast and Empress Cygnus. #bThe boat is for 1 person and it's always readily available#k so you can travel to Ereve fast.")
     elseif selection == 6 then
-		self.say("Are you going to Edelstein? The brave people who live there constantly fight the influence of dangerous monsters. #b1-person Airship to Edelstein is always on standby#k, so you can use it at any time.")
+	self.say("Are you going to Edelstein? The brave people who live there constantly fight the influence of dangerous monsters. #b1-person Airship to Edelstein is always on standby#k, so you can use it at any time.")
 	end
 elseif target.field == 104020110 then
     contimove = target.as_continent()
