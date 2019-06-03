@@ -1,1 +1,1 @@
-target.effect("resistance/tutorialGuide")
+target.screen_field_effect("resistance/tutorialGuide")
