@@ -10,7 +10,6 @@ self.say("Hey... Did you hear that?")
 speakerSchiller.say("Huh? Well... Now that you mention it, I do hear something. Yes, I do hear something...")
 
 --TODO:
---cm.getChar().updateInfoQuest(23007,cm.getInfoQuest(23007).replace("vel00=1","vel00=2") + ";vel01=1");
 --cm.MovieClipIntroUI(true);
 --cm.trembleMap(0,500);
 
