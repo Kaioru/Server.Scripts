@@ -6,12 +6,13 @@ self.say("Oh my, oh my. I told them to make sure the townspeople kept their kids
 target.say("Hmph. Big words, but let's see if you can catch me first.")
 self.say("Why, you insolent, little-- Ahem, ahem, ahem. Your words don't matter. Time for me to pull out the big guns. I do hope you're ready. If not, you will suffer.")
 
-if target.hp >= "2" then
-	target.hp = target.hp/2
+if target.hp >= 2 then
+	target.hp = target.hp / 2
 end
 
 target.say("#b(Oh no! Schiller's attack HALVED your HP! He's tougher than you anticipated.)#k")
 self.say("I say, got any more big words, kiddo? I'll make sure Gelimer performs some especially atrocious experiments on you. But I'll be nice if you come with me quiet-like.")
+
 speakerJ = self.as_speaker(2159010)
 speakerJ.say("Hold it right there!")
 target.transfer_field(931000021, 1)

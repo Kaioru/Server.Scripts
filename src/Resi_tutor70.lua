@@ -1,0 +1,1 @@
+target.reserved_effect("Effect/Direction4.img/Resistance/TalkJ")	
