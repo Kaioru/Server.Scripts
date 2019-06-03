@@ -1,1 +1,1 @@
--- TODO: directionmode
+-- TODO: setStandAloneMode
