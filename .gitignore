@@ -57,3 +57,5 @@ $RECYCLE.BIN/
 
 
 # End of https://www.gitignore.io/api/macos,windows
+/src/.vs/src/v16/.suo
+/src/.vs

@@ -1,0 +1,1 @@
+target.avatar_oriented_effect("Effect/OnUserEff.img/guideEffect/resistanceTutorial/userTalk")
