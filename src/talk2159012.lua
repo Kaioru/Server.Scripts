@@ -12,6 +12,4 @@ self.say({
 	speakerGelimer.get_speech("Hey... Did you hear that?"),
 	speakerSchiller.get_speech("Huh? Well... Now that you mention it, I do hear something. Yes, I do hear something...")
 })
-
-
 target.reserved_effect("Effect/Direction4.img/Resistance/TalkInLab")
