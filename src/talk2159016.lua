@@ -1,6 +1,6 @@
 quest = target.get_quest(23999)
 
-if quest.record_key("exp4") == 1  then
+if quest.record_key("exp4") == "1"  then
 self.say("Hehehe...") 
 end
 

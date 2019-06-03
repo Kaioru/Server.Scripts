@@ -6,7 +6,7 @@ self.say("Oh my, oh my. I told them to make sure the townspeople kept their kids
 target.say("Hmph. Big words, but let's see if you can catch me first.")
 self.say("Why, you insolent, little-- Ahem, ahem, ahem. Your words don't matter. Time for me to pull out the big guns. I do hope you're ready. If not, you will suffer.")
 
-if target.hp >= 2 then
+if target.hp >= "2" then
 	target.hp = target.hp/2
 end
 

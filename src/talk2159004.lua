@@ -1,6 +1,6 @@
 quest = target.get_quest(23999)
 
-if quest.record_key("exp2") == 1  then
+if quest.record_key("exp2") == "1"  then
 self.say("Did you find Jun and Von yet? Von is really, really good at hiding.") 
 end
 
