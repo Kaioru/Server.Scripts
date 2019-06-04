@@ -20,5 +20,4 @@ self.say ({
 	speakerSchiller.get_speech("I say, got any more big words, kiddo? I'll make sure Gelimer performs some especially atrocious experiments on you. But I'll be nice if you come with me quiet-like."),
 	speakerJ.get_speech("Hold it right there!")
 })
-
 target.transfer_field(931000021, 1)
