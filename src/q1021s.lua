@@ -16,7 +16,7 @@ else
 	})
 end
 
-if self.ask_yes_no("So.....  Let me just do this for fun! Abaracadabra~!") then
+if speakerRoger.ask_yes_no("So.....  Let me just do this for fun! Abaracadabra~!") then
 	if target.hp > 25 then
 		target.hp = 25
 	end
