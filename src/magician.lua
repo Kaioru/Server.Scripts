@@ -3,7 +3,7 @@ inventory = target.get_inventory()
 
 if target.job == 0 then
 	self.say("Do you want to be a Magician? You need to meet some requirements in order to do so. You need to be at least at #bLevel 8#k. Let's see if you have what it takes to become a Magician...")
-	if target.level >= 10 and target.int >= 20 then
+	if target.level >= 10 then
 		self.say("You definitely have the look of a Magician. You may not be there yet, but I can see the Magician in you...what do you think? Do you want to become the Magician?")
 		self.say("Alright, you're a Magician from here on out, since I, Grendel the Really old, the head Magician, allow you so. It isn't much, but I'll give you a little bit of what I have...")
 

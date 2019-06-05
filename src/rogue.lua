@@ -3,7 +3,7 @@ inventory = target.get_inventory()
 
 if target.job == 0 then
 	self.say("Want to be a thief? There are some standards to meet, because we can't just accept EVERYONE in ... #bYour level should be at least 10#k. Let's see...")
-	if target.level >= 10 and target.dex >= 25 then
+	if target.level >= 10 then
 		self.say("Oh...! You look like someone that can definitely be a part of us...all you need is a little sinister mind, and...yeah...so, what do you think? Wanna be the Rouge?")
 		self.say("Alright, from here on out, you are part of us! You'll be living the life of a wanderer at first, but just be patient and soon, you'll be living the high life. Alright, it ain't much, but I'll give you some of my abilities...HAAAHHH!!")
 

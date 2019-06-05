@@ -7,7 +7,7 @@ self.ask_menu("Have you got something to say?", {
 
 if target.job == 0 then
 	self.say("Do you wish to become a Pirate? You'll need to meet our set of standard if you are to become one of us. I need you to be #bat least at Level 10#k. Let's see...")
-	if target.level >= 10 and target.dex >= 20 then
+	if target.level >= 10 then
 		self.say("You seem more than qualified! Great, are you ready to become one of us?")
 		self.say("Welcome to the band of Pirates! You may have to spend some time as a wanderer at first, but better days will certainly dawn upon you, sooner than you think! In the mean time, let me share some of my abilities with you.")
 
