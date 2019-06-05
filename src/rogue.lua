@@ -13,7 +13,6 @@ if target.job == 0 then
         target.max_mp = target.max_mp + 25 + math.random(25)
         target.hp = target.max_hp
         target.mp = target.max_mp
-        target.mp = target.max_mp
 		target.str = 4
 		target.dex = 25
 		target.int = 4
