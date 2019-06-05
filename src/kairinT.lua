@@ -38,5 +38,5 @@ if target.job == 0 then
 		self.say("Hmm...I don't think you have trained enough, yet. See me when you get stronger.")
 	end
 else
-	self.say("'Don't you want to feel the freedom eminating from the sea? Don't you want the power, the fame, and everything else that comes with it? Then you should join us and enjoy it yourself.")
+	self.say("Don't you want to feel the freedom eminating from the sea? Don't you want the power, the fame, and everything else that comes with it? Then you should join us and enjoy it yourself.")
 end
