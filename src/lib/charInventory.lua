@@ -89,5 +89,9 @@ function charInventory.giveRewardJ()
 	inventory.add(2000003, 3) -- Blue Potion
 end
 
+function charInventory.giveBattleMage1stJobItems()
+	inventory.add(1382100, 1) -- ??
+	inventory.add(1142242, 1) -- ??
+end
 
 return charInventory
