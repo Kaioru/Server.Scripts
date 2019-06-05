@@ -1,5 +1,5 @@
--- TODO: inventory expanse, second job, third job
-inventory = target.get_inventory()
+-- TODO: second job, third job
+charInventory = require "lib/charInventory"
 
 self.ask_menu("Have you got something to say?", {
     [0] = "I would like to learn more about pirates.."
@@ -22,12 +22,9 @@ if target.job == 0 then
 		target.int = 4
 		target.luk = 4
 		target.ap = (target.level - 1) * 5 - 7
-		inventory.add(1482014, 1) -- Scallywag Knuckler	
-		inventory.add(1492014, 1) -- Pirate's Pistol
-		inventory.add(2330006, 600) -- Bullet for Novice Pirates
-		inventory.add(2330006, 600) -- Bullet for Novice Pirates
-        --C.IncreaseSlotLimit(1, 1);
-        --C.IncreaseSlotLimit(4, 1);
+		charInventory.givePirate1stJobItems()
+		charInventory.increaseEQPslots(1)
+		charInventory.increaseETCslots(1)
 		
 		self.say("I have just increased the number of slots for your equipment and etc. inventory. You have also gotten a bit stronger. Can you feel it? Now that you can officially call yourself a Pirate, join us in our quest for adventure and freedom!")
 		self.say("I have just given you a little bit of #bSP#k. Look at the #bSkill menu#k to find some skills, and use your SP to learn the skills. Beware that not all skills can be enhanced from the get go. There are some skills that you can only acquire after mastering basic skills.")

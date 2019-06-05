@@ -1,5 +1,5 @@
--- TODO: inventory expanse, second job, third job
-inventory = target.get_inventory()
+-- TODO: second job, third job
+charInventory = require "lib/charInventory"
 
 if target.job == 0 then
 	self.say("Want to be a thief? There are some standards to meet, because we can't just accept EVERYONE in ... #bYour level should be at least 10#k. Let's see...")
@@ -18,12 +18,9 @@ if target.job == 0 then
 		target.int = 4
 		target.luk = 4
 		target.ap = (target.level - 1) * 5 - 12
-		inventory.add(1472061, 1) -- Beginners Garnier
-		inventory.add(1332063, 1) -- Beginner Thief's short sword
-		inventory.add(2070015, 1000) -- Special Subis
-		inventory.add(2070015, 1000) -- Special Subis
-		--C.IncreaseSlotLimit(1, 1);
-        --C.IncreaseSlotLimit(4, 1);
+		charInventory.giveRogue1stJobItems()
+		charInventory.increaseEQPslots(1)
+		charInventory.increaseETCslots(1)
 
 		self.say("I've just created more slots for your equipment and etc. storage. Not only that, but you've also gotten stronger as well. As you become part of us, and learn to enjoy life in different angles, you may one day be on top of this of darkness. I'll be watching your every move, so don't let me down.")
 		self.say("I just gave you a little bit of #bSP#k. When you open up the #bSkill menu#k on the lower left corner of the screen, there are skills you can learn by using SP's. One warning, though: You can't raise it all together all at once. There are also skills you can acquire only after having learned a couple of skills first.")
