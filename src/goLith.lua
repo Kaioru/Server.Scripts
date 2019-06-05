@@ -1,0 +1,1 @@
+target.reserved_effect("Effect/Direction3.img/goLith/Scene" .. target.gender)
