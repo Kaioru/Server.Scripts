@@ -26,5 +26,4 @@ inventory = target.get_inventory()
 inventory.add(2000000, 3)
 inventory.add(2000003, 3)
 target.exp = target.exp + 90
---TODO: DisableUI()
 target.transfer_field(310000000, 8)

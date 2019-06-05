@@ -24,6 +24,7 @@ elseif (quest.record_key("vel00") == "1" and quest.record_key("vel01") != "1") t
 	target.field = 931000011
 elseif quest.record_key("vel01") == "1" then
 	self.say ({
+		target.direction_mode = false
 		speakerVita.get_speech("Whew, something must have distracted them. Now's your chance. GO!"),
 		target.get_speech("But if i flee, you'll be left here alone."),
 		speakerVita.get_speech("Forget about me. You can't help me. Doctor Gelimer would realize right away if I'm missing, and then he'd summon the Black Wings to look for us. No, forget me and save yourself. Please!"),
