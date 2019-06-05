@@ -1,6 +1,9 @@
 -- TODO: inventory expanse, second job, third job
 inventory = target.get_inventory()
-self.say("Have you got something to say?\r\n#b#L0# I would like to learn more about pirates..#l")
+
+self.ask_menu("Have you got something to say?", {
+    [0] = "I would like to learn more about pirates.."
+})
 
 if target.job == 0 then
 	self.say("Do you wish to become a Pirate? You'll need to meet our set of standard if you are to become one of us. I need you to be #bat least at Level 10#k. Let's see...")
