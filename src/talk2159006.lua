@@ -8,6 +8,7 @@ if quest.record_key("vel00") != "1" then
 		target.get_speech("Whos talking?! Where are you?!"),
 		speakerVita.get_speech("Look up.")
 	})
+
 	quest.update("vel00", "1") 
 	target.reserved_effect("Effect/Direction4.img/Resistance/ClickVel")
 elseif (quest.record_key("vel00") == "1" and quest.record_key("vel01") != "1") then
@@ -20,17 +21,20 @@ elseif (quest.record_key("vel00") == "1" and quest.record_key("vel01") != "1") t
 		target.get_speech("What? But what about you?!"),
 		speakerVita.get_speech("Shhh! Did you hear that? Someone's coming! It's got to be Doctor Gelimer! Oh no!")
 	})
+
 	quest.update("vel01", "1") 
 	target.field = 931000011
 elseif quest.record_key("vel01") == "1" then
-	self.say ({
 		target.direction_mode = false
+
+	self.say ({
 		speakerVita.get_speech("Whew, something must have distracted them. Now's your chance. GO!"),
 		target.get_speech("But if i flee, you'll be left here alone."),
 		speakerVita.get_speech("Forget about me. You can't help me. Doctor Gelimer would realize right away if I'm missing, and then he'd summon the Black Wings to look for us. No, forget me and save yourself. Please!"),
 		target.get_speech("I can't just leave you here! And you shouldn't give up hope so easily!"),
 		speakerVita.get_speech("But it IS hopeless. I'm stuck in here. But thank you for caring. It's been a long time since anyone's been kind to me. But now, hurry! You must go!")
 	})
+
 	if self.ask_yes_no("#b(Vita closes her eyes like she's given up. What should you do? How about trying to break open the vat?)#k") then
 	  target.exp = target.exp + 60
 	  target.field = 931000013

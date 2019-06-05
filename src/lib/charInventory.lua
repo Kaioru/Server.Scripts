@@ -84,4 +84,10 @@ function charInventory.giveRogue1stJobItems()
 	inventory.add(2070015, 1000) -- Special Subis
 end
 
+function charInventory.giveRewardJ()
+	inventory.add(2000000, 3) -- Red Potion	
+	inventory.add(2000003, 3) -- Blue Potion
+end
+
+
 return charInventory

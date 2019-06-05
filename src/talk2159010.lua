@@ -1,3 +1,5 @@
+charInventory = require "lib/charInventory"
+quest = target.get_quest(23007)
 speakerVita2 = self.as_speaker(2159007)
 speakerJ = self.as_speaker(2159010)
 
@@ -20,10 +22,7 @@ self.say({
 	speakerJ.get_speech("Ah, little youngling, so you wish to fight the Black Wings, do you? Your heart is noble, but there is little you can do to aid our efforts until you reach Lv. 10. Do so, and I will have someone from the Resistance contact you. That's a promise, kiddo. Now, I must be off, but perhaps we will meet again someday!")
 })
 
-quest = target.get_quest(23007)
 quest.complete()
-inventory = target.get_inventory()
-inventory.add(2000000, 3)
-inventory.add(2000003, 3)
+charInventory.giveRewardJ()
 target.exp = target.exp + 90
 target.transfer_field(310000000, 8)
