@@ -1,4 +1,4 @@
-speakerRoger = self.as_speaker(1021)
+speakerRoger = self.as_speaker(2000)
 inventory = target.get_inventory()
 gender = target.gender
 male = 0x0
