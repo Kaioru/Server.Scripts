@@ -1,7 +1,8 @@
+charJob = require "lib/charJob"
 inventory = target.get_inventory()
 quest = target.get_quest(29942)
 
-if inventory.item_count(1142243) < 1 then
+if inventory.item_count(1142243) < 1 and charJob.checkIfJobBelongsToResistance() then
 	inventory.add(1142243, 1)
 	quest.complete()
   -- TODO: Q.ShowInfo('<Special Training Intermediate> has been rewarded.');
