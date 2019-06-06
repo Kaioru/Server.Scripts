@@ -1,4 +1,3 @@
---TODO: disableUI
 if self.ask_yes_no("Take this ship and you'll head off to a bigger continent. For #e150 mesos#n I'll take you to #bVictoria Island#k. The thing is, once  you leave this place, you can't ever come back. What do you think? Do you want to go to Victoria Island?") then
 
 	if target.level < 7 then 

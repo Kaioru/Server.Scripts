@@ -1,5 +1,5 @@
--- TODO: inventory expanse, second job, third job
-inventory = target.get_inventory()
+-- TODO: second job, third job
+charInventory = require "lib/charInventory"
 
 if target.job == 0 then
 	self.say("So you want to become the Bowman??? Well...you need to meet some requirements to do so...at least #bLevel10#k. Let's see...hmm...")
@@ -18,10 +18,9 @@ if target.job == 0 then
 		target.int = 4
 		target.luk = 4
 		target.ap = (target.level - 1) * 5 - 12
-		inventory.add(1452051, 1) -- Give beginner bow
-		inventory.add(2060000, 6000) -- Give arrrows
-		--C.IncreaseSlotLimit(1, 1);
-		--C.IncreaseSlotLimit(2, 1);
+		charInventory.giveBowman1stJobItems()
+		charInventory.increaseEQPslots(1)
+		charInventory.increaseUSEslots(1)
 		
 		self.say("I have added slots for your equipment and use inventory. You have also gotten much stronger. Train harder, and you may one day reach the very top of the bowman. I'll be watching you from afar. Please work hard.")
 		self.say("I just gave you a little bit of #bSP#k. When you open up the #bSkill menu#k on the lower left corner of the screen, there are skills you can learn by using SP's. One warning, though: You can't raise it all together all at once. There are also skills you can acquire only after having learned a couple of skills first.")

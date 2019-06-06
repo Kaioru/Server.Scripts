@@ -1,1 +1,1 @@
--- TODO: directionmode
+target.direction_mode = true

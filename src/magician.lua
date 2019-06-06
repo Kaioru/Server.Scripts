@@ -1,5 +1,5 @@
--- TODO: inventory expanse, second job, third job
-inventory = target.get_inventory()
+-- TODO: second job, third job
+charInventory = require "lib/charInventory"
 
 if target.job == 0 then
 	self.say("Do you want to be a Magician? You need to meet some requirements in order to do so. You need to be at least at #bLevel 8#k. Let's see if you have what it takes to become a Magician...")
@@ -16,7 +16,7 @@ if target.job == 0 then
 		target.int = 20
 		target.luk = 4
 		target.ap = (target.level - 1) * 5 - 7
-		inventory.add(1372043, 1) -- Beginner Magician's wand
+		charInventory.giveMagician1stJobItems()
 		
 		self.say("You have just equipped yourself with much more magicial power. Please keep training and make yourself much better...I'll be watching you from here and there...")
 		self.say("I just gave you a little bit of #bSP#k. When you open up the #bSkill menu#k on the lower left corner of the screen, there are skills you can learn by using SP's. One warning, though: You can't raise it all together all at once. There are also skills you can acquire only after having learned a couple of skills first.")

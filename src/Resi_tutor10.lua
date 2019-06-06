@@ -1,1 +1,1 @@
--- TODO: setStandAloneMode
+target.stand_alone_mode = true

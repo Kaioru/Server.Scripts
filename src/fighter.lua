@@ -1,5 +1,5 @@
--- TODO: inventory expanse, second job, third job
-inventory = target.get_inventory()
+-- TODO: second job, third job
+charInventory = require "lib/charInventory"
 
 if target.job == 0 then
 	self.say("Do you wish to be a Warrior? You need to meet some criteria in order to do so. #bYou need to be at least in Level 10#k. Let's see...")
@@ -16,11 +16,11 @@ if target.job == 0 then
 		target.int = 4
 		target.luk = 4
 		target.ap = (target.level - 1) * 5 - 12
-		inventory.add(1302077, 1) -- Give beginner warrior's sword
-		--C.IncreaseSlotLimit(1, 1);
-		--C.IncreaseSlotLimit(2, 1);
-		--C.IncreaseSlotLimit(3, 1);
-		--C.IncreaseSlotLimit(4, 1);
+		charInventory.giveWarrior1stJobItems()
+		charInventory.increaseEQPslots(1)
+		charInventory.increaseUSEslots(1)
+		charInventory.increaseINSslots(1)
+		charInventory.increaseETCslots(1)
 
 		self.say("You've gotten much stronger now. Plus every single one of your inventories have added slots. A whole row, to be exact. Go see for it yourself. I just gave you a little bit of #bSP#k. When you open up the #bSkill menu#k on the lower left corner of the screen, there are skills you can learn by using SP's. One warning, though: You can't raise it all together all at once. There are also skills you can accquire only after having learned a couple of skills first.")
 	else
