@@ -94,4 +94,28 @@ function charInventory.giveBattleMage1stJobItems()
 	inventory.add(1142242, 1) -- ??
 end
 
+function charInventory.awardBeginnerAdventurerMedal()
+	if inventory.item_count(1142107) < 1 then
+		inventory.add(1142107, 1) --  <Beginner Adventurer> 
+	end
+end
+
+function charInventory.awardJuniorAdventurerMedal()
+	if inventory.item_count(1142108) < 1 then
+		inventory.add(1142108, 1) --  <Junior Adventurer> 
+	end
+end
+
+function charInventory.awardVeteranAdventurerMedal()
+	if inventory.item_count(1142109) < 1 then
+		inventory.add(1142109, 1) --  <Veteran Adventurer> 
+	end
+end
+
+function charInventory.awardMasterAdventurerMedal()
+	if inventory.item_count(1142110) < 1 then
+		inventory.add(1142110, 1) --  <Master Adventurer> 
+	end
+end
+
 return charInventory
