@@ -1,4 +1,4 @@
-target.field == 130000000 then
+if target.field == 130000000 then
 	target.transfer_field(130000100, 5)
 elseif target.field == 130000200 then
 	target.transfer_field(130000100, 4)
