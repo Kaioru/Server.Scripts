@@ -25,19 +25,19 @@ local clerics = {cleric = 230, priest = 231, bishop = 232}
 local magicans = {magician, fpWizards, ilWizards, clerics}
 
 local bowman = 300
-local hunters = {fpWizard = 310, fpMage = 311, fpArchmage = 312}
-local crossbowmans = {ilWizard = 320, ilMage = 321, ilArchmage = 322}
-local bowmans = {}
+local hunters = {hunter = 310, ranger = 311, bowMaster = 312}
+local crossbowmans = {crossbowman = 320, sniper = 321, marksman = 322}
+local bowmans = {hunters, crossbowmans}
 
 local thief = 300
 local assasins = {assasin = 410, hermit = 411, nighLord = 412}
 local bandits = {bandit = 420, chiefBandit = 421, shadower = 422}
-local thieves = {}
+local thieves = {assasins, bandits}
 
 local pirate = 500
 local brawlers = {brawler = 510, marauder = 511, buccaneer = 512}
 local gunslingers = {gunslinger = 520, outlaw = 521, corsair = 522}
-local pirates = {}
+local pirates = {brawlers, gunslingers}
 local jobsExplorers = {warriors, magicans, bowmans, thieves, pirates}
 
 local noblesse = 1000
@@ -54,7 +54,7 @@ local jobsLegends = {arans, evans}
 
 local jobsDualBlades = {bladeRecruit = 430, bladeAcolyte = 431, bladeSpecialist = 432, bladeLord = 433, bladeMaster = 434}
 
-local function table_contains_value(table, val)
+local function tableContainsValue(table, val)
     for index, value in ipairs(table) do
         if value == val then
             return true
@@ -64,7 +64,7 @@ local function table_contains_value(table, val)
 end
 
 function charJob.checkIfJobBelongsToSuperUsers()
-	if table_contains_value(privilegedUsers, job) then
+	if tableContainsValue(privilegedUsers, job) then
 		return true
 	else
 		return false
@@ -72,7 +72,7 @@ function charJob.checkIfJobBelongsToSuperUsers()
 end
 
 function charJob.checkIfJobBelongsToResistance()
-	if table_contains_value(jobsResistance, job) then
+	if tableContainsValue(jobsResistance, job) then
 		return true
 	else
 		return false
@@ -80,7 +80,7 @@ function charJob.checkIfJobBelongsToResistance()
 end
 
 function charJob.checkIfJobBelongsToExplorers()
-	if table_contains_value(jobsExplorers, job) then
+	if tableContainsValue(jobsExplorers, job) then
 		return true
 	else
 		return false
@@ -88,7 +88,7 @@ function charJob.checkIfJobBelongsToExplorers()
 end
 
 function charJob.checkIfJobBelongsToKoc()
-	if table_contains_value(jobsKnightsOfCygnus, job) then
+	if tableContainsValue(jobsKnightsOfCygnus, job) then
 		return true
 	else
 		return false
@@ -96,7 +96,7 @@ function charJob.checkIfJobBelongsToKoc()
 end
 
 function charJob.checkIfJobBelongsToLegends()
-	if table_contains_value(jobsLegends, job) then
+	if tableContainsValue(jobsLegends, job) then
 		return true
 	else
 		return false
@@ -104,7 +104,7 @@ function charJob.checkIfJobBelongsToLegends()
 end
 
 function charJob.checkIfJobBelongsToDualBlades()
-	if table_contains_value(jobsDualBlades, job) then
+	if tableContainsValue(jobsDualBlades, job) then
 		return true
 	else
 		return false
