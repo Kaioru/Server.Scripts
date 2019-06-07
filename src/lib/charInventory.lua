@@ -94,4 +94,144 @@ function charInventory.giveBattleMage1stJobItems()
 	inventory.add(1142242, 1) -- ??
 end
 
+------------------------------
+-- Adventurer medals follow --
+------------------------------
+function charInventory.awardBeginnerAdventurerMedal()
+	if inventory.item_count(1142107) < 1 then
+		inventory.add(1142107, 1) --  <Beginner Adventurer> 
+	end
+end
+
+function charInventory.awardJuniorAdventurerMedal()
+	if inventory.item_count(1142108) < 1 then
+		inventory.add(1142108, 1) --  <Junior Adventurer> 
+	end
+end
+
+function charInventory.awardVeteranAdventurerMedal()
+	if inventory.item_count(1142109) < 1 then
+		inventory.add(1142109, 1) --  <Veteran Adventurer> 
+	end
+end
+
+function charInventory.awardMasterAdventurerMedal()
+	if inventory.item_count(1142110) < 1 then
+		inventory.add(1142110, 1) --  <Master Adventurer> 
+	end
+end
+
+------------------------------
+--    KoC medals follow     --
+------------------------------
+function charInventory.awardNoblesseMedal()
+	if inventory.item_count(1142065) < 1 then
+		inventory.add(1142065, 1) --  <Noblesse> 
+	end
+end
+
+function charInventory.awardTrainingKnightMedal()
+	if inventory.item_count(1142066) < 1 then
+		inventory.add(1142066, 1) --  <Training Knight> 
+	end
+end
+
+function charInventory.awardOfficialKnightMedal()
+	if inventory.item_count(1142067) < 1 then
+		inventory.add(1142067, 1) --  <Official Knight> 
+	end
+end
+
+function charInventory.awardAdvancedKnightMedal()
+	if inventory.item_count(1142068) < 1 then
+		inventory.add(1142068, 1) --  <Advanced Knight> 
+	end
+end
+
+function charInventory.awardCaptainKnightMedal()
+	if inventory.item_count(1142069) < 1 then
+		inventory.add(1142069, 1) --  <Captain Knight> 
+	end
+end
+
+------------------------------
+--    Aran medals follow    --
+------------------------------
+function charInventory.awardAwakenedAranMedal()
+	if inventory.item_count(1142129) < 1 then
+		inventory.add(1142129, 1) --  <Awakened Aran> 
+	end
+end
+
+function charInventory.awardAranInMemoryMedal()
+	if inventory.item_count(1142130) < 1 then
+		inventory.add(1142130, 1) --  <Aran in Memory> 
+	end
+end
+
+function charInventory.awardAranInMiseryMedal()
+	if inventory.item_count(1142131) < 1 then
+		inventory.add(1142131, 1) --  <Aran in Misery> 
+	end
+end
+
+function charInventory.awardAranInHopeMedal()
+	if inventory.item_count(1142132) < 1 then
+		inventory.add(1142132, 1) --  <Aran in Hope> 
+	end
+end
+
+function charInventory.awardAranTheHeroMedal()
+	if inventory.item_count(1142133) < 1 then
+		inventory.add(1142133, 1) --  <Aran the Hero> lvl 200
+	end
+end
+
+--------------------------------
+--  Resistance medals follow  --
+--------------------------------
+function charInventory.awardSpecialTrainingBeginnerMedal()
+	if inventory.item_count(1142242) < 1 then
+		inventory.add(1142242, 1) --  <Special Training Beginner> 
+	end
+end
+
+function charInventory.awardSpecialTrainingIntermediateyMedal()
+	if inventory.item_count(1142243) < 1 then
+		inventory.add(1142243, 1) --  <Special Training Intermediate> 
+	end
+end
+
+function charInventory.awardSpecialTrainingGraduateMedal()
+	if inventory.item_count(1142244) < 1 then
+		inventory.add(1142244, 1) --  <Special Training Graduate> 
+	end
+end
+
+function charInventory.awardSpecialTrainingSuperiorMedal()
+	if inventory.item_count(1142245) < 1 then
+		inventory.add(1142245, 1) --  <Special Training Superior> 
+	end
+end
+
+function charInventory.awardSpecialTrainingMasterMedal()
+	if inventory.item_count(1142246) < 1 then
+		inventory.add(1142246, 1) --  <Special Training Master> lvl 200
+	end
+end
+
+--[[
+1142112 // Victoria Explorer
+1142113 // El Nath Explorer
+1142114 // Ludus Lake Explorer
+1142115 // Undersea Explorer
+1142116 // Mu Lung Explorer
+1142117 // Nihal Desert Explorer
+1142118 // Minar Forest Explorer
+1142119 // Ossyria Explorer
+1142120 // Maple Explorer
+1142127 // Beginner Explorer
+1142128 // Sleepywood Explorer
+]]--
+
 return charInventory

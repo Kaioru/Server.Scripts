@@ -1,1 +1,2 @@
-target.direction_mode = true
+-- TODO: should disable ui but allow actions
+target.stand_alone_mode = true
