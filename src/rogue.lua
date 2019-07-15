@@ -1,7 +1,6 @@
 -- TODO: second job, third job
 charInventory = require "lib/charInventory"
 
-
 if target.job == 0 then
 	self.say("Want to be a thief? There are some standards to meet, because we can't just accept EVERYONE in ... #bYour level should be at least 10#k. Let's see...")
 	if target.level >= 10 then
