@@ -59,6 +59,7 @@ local reservedEffects = {
 	promotionScene1 = "Effect/Direction4.img/promotion/Scene1",
 	promotionScene2 = "Effect/Direction4.img/promotion/Scene2",
 	promotionScene3 = "Effect/Direction4.img/promotion/Scene3",
+	promiseDragonScene0 = "Effect/Direction4.img/PromiseDragon/Scene0"
 	meetWithDragonScene = "Effect/Direction4.img/meetWithDragon/Scene",
 	child = "Effect/Direction1.img/aranTutorial/Child",
 	clickChild = "Effect/Direction1.img/aranTutorial/ClickChild",

@@ -1,5 +1,8 @@
-quest = target.get_quest(22012)
+mapFields = require "lib/mapFields"
+mapQuests = require "lib/mapQuests"
 
-if quest.state == 0x0 then
+quest = target.get_quest(mapQuests.getID("DragonEyes"))
+
+if quest.state == mapQuests.getState("None") then
     quest.accept()
 end

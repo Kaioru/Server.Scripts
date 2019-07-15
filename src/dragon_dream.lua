@@ -1,8 +1,11 @@
 mapFields = require "lib/mapFields"
-quest = target.get_quest(22012)
+mapQuests = require "lib/mapQuests"
+
+quest = target.get_quest(mapQuests.getID("DragonEyes"))
 speaker = self.as_speaker(0x1)
 
-if quest.state == 0x1 then
+if quest.state == mapQuests.getState("Perform") then
+
     speaker.say({ 
         "You, who are destined to be a Dragon Master...\r\nYou have finally arrived.", 
         "Go and fulfill your duties as the Dragon Master..." 

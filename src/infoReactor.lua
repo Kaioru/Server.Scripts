@@ -1,2 +1,14 @@
--- TODO: Only execute once,quest?
-target.avatar_oriented_effect("UI/tutorial.img/27")
+-- TODO: Only execute once
+mapQuests = require("lib/mapQuests")
+mapEffects = require("lib/mapEffects")
+
+quest1 = target.get_quest(mapQuests.getID("reactor1"))
+quest2 = target.get_quest(mapQuests.getID("reactor2"))
+
+if quest1.state == mapQuests.getState("Complete") then
+    target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("infoReactor1"))
+end
+
+if quest2.state == mapQuests.getState("Complete") then
+    target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("infoReactor2"))
+end

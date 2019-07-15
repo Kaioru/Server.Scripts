@@ -1,2 +1,4 @@
 -- TODO: Only execute once
-target.avatar_oriented_effect("UI/tutorial.img/26")
+mapEffects = require("lib/mapEffects")
+
+target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("infoWorldMap"))

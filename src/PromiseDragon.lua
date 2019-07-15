@@ -1,1 +1,4 @@
-target.reserved_effect("Effect/Direction4.img/PromiseDragon/Scene0")
+mapEffects = require("lib/mapEffects")
+
+target.direction_mode = true
+target.reserved_effect(mapEffects.getReservedEffect("promiseDragonScene0") .. target.gender)
