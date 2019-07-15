@@ -1,2 +1,5 @@
-speakerVita2 = self.as_speaker(2159007)
-target.converse("talk2159007", speakerVita2, target)
+npcSpeakers = require "lib/npcSpeakers"
+
+vita2 = self.as_speaker(npcSpeakers.getID("Vita2"))
+
+target.converse("talk2159007", vita2, target)
