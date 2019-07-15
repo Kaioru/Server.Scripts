@@ -1,6 +1,9 @@
 -- TODO: Only execute once
-quest = target.get_quest(1031)
+mapQuests = require("lib/mapQuests")
+mapEffects = require("lib/mapEffects")
 
-if quest.state == 0x1 then
-    target.avatar_oriented_effect("UI/tutorial.img/25")
+quest = target.get_quest(mapQuests.getID("Minimap"))
+
+if quest.state == mapQuests.getState("Perform") then
+    target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("infoMinimap"))
 end
