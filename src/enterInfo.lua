@@ -1,1 +1,3 @@
-target.transfer_field(104000004, 1)
+mapFields = require "lib/mapFields"
+
+target.transfer_field(mapFields.getID("TrusInfoShop"), 1)

@@ -1,1 +1,3 @@
-target.field = 105010000
+mapFields = require "lib/mapFields"
+
+target.field = mapFields.getID("SilentSwamp")
