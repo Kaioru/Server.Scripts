@@ -57,6 +57,17 @@ function charInventory.increaseCSHslots(n)
 	inventory.set_inventory_limit(CSH, charInventory.getCSHslotCount() + n)
 end
 
+function charInventory.hasRecommendationLetter()
+	if inventory.item_count(4031801) > 0 then -- Lucas's Recommendation Letter
+		return true;
+	end
+	return false;
+end
+
+function charInventory.removeRecommendationLetter()
+	inventory.remove(4031801, 1)
+end
+
 function charInventory.giveBowman1stJobItems()
 	inventory.add(1452051, 1)    -- Give beginner bow
 	inventory.add(2060000, 6000) -- Give arrrows
