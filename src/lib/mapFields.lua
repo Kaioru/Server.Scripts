@@ -29,6 +29,10 @@ local fields = {
 	SilentSwamp = 105010000, -- Swamp : Silent Swamp
 	-- 105010100 // Swamp : Humid Swamp
 	-- 105010200 // Swamp : Secret Swamp
+-- Mushroom Castle --
+	MushroomForestField = 106020000, -- Mushroom Castle : Mushroom Forest Field
+	CastleWallEdge = 106020501, -- Mushroom Castle : Castle Wall Edge
+	CastleWall6 = 106021300, -- Mushroom Castle : Castle Wall 6
 -- Edelstein --
 	Edelstein = 310000000, -- Black Wing Territory : Edelstein
 	EdelsteinCityHall =	310000001, -- Edelstein : Edelstein City Hall
