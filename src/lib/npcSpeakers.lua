@@ -24,7 +24,8 @@ local speakers = {
 	Vita2 = 2159007, 
 	Schiller = 2159008,
 	J = 2159010,
-	Gelimer = 2159012
+	SuspiciousHollow = 2159011,
+	Gelimer = 2159012,
 }
 
 function npcSpeakers.getID(key)

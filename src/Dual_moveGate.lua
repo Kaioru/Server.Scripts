@@ -1,1 +1,3 @@
-target.transfer_field(103050000, 1)
+mapFields = require("lib/mapFields")
+
+target.transfer_field(mapFields.getID("KerningCityBackAlley"), 1)

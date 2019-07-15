@@ -1,1 +1,3 @@
-target.transfer_field(140020300, 1)
+mapFields = require "lib/mapFields"
+
+target.transfer_field(mapFields.getID("PenguinPort"), 1)

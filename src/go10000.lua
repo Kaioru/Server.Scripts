@@ -1,1 +1,3 @@
-target.screen_field_effect("maplemap/enter/10000")
+mapEffects = require ("lib/mapEffects")
+
+target.screen_field_effect(mapEffects.getScreenFieldEffect("enter10000"))

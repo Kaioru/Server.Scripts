@@ -24,6 +24,7 @@ local fields = {
 	LithHarborGeneralStore = 104000002,	-- Lith Harbor : Lith Harbor General Store
 	LithHarborWeaponStore = 104000003, -- Lith Harbor : Lith Harbor Weapon Store
 	TrusInfoShop = 104000004, -- Lith Harbor : Tru's Info Shop
+	PenguinPort = 140020300, -- Snow Island : Penguin Port
 -- Swamp --
 	SilentSwamp = 105010000, -- Swamp : Silent Swamp
 	-- 105010100 // Swamp : Humid Swamp
@@ -76,18 +77,20 @@ local fields = {
 	NeglectedRockyMountain4 = 931000021, -- Dangerous Hide-and-Seek : Neglected Rocky Mountain
 	BehindTheMine = 931000030, -- Dangerous Hide-and-Seek : Behind the Mine
 -- Evan Tutorial --
-	Teaser1 = 900090000 -- Video : Teaser
-	Teaser2 = 900090001 -- Video : Teaser
-	Teaser3 = 900090002 -- Video : Teaser
-	Teaser4 = 900090003 -- Video : Teaser
-	Teaser5 = 900090004 -- Video : Teaser
-	Tutorial = 900090100 -- Video : Tutorial 0
-	Tutorial1 = 900090101 -- Video : Tutorial 1
-	Tutorial2 = 900090102 -- Video : Tutorial 2
-	JobAdvancement = 900090103 -- Video : Job Advancement
+	Teaser1 = 900090000, -- Video : Teaser
+	Teaser2 = 900090001, -- Video : Teaser
+	Teaser3 = 900090002, -- Video : Teaser
+	Teaser4 = 900090003, -- Video : Teaser
+	Teaser5 = 900090004, -- Video : Teaser
+	Tutorial = 900090100, -- Video : Tutorial 0
+	Tutorial1 = 900090101, -- Video : Tutorial 1
+	Tutorial2 = 900090102, -- Video : Tutorial 2
+	JobAdvancement = 900090103, -- Video : Job Advancement
 -- Free Market --
-	FreeMarketEtrance = 910000000 -- Hidden Street : Free Market Entrance
-	FreeMarket1 = 910000001 -- Hidden Street : Free Market<1>
+	FreeMarketEtrance = 910000000, -- Hidden Street : Free Market Entrance
+	FreeMarket1 = 910000001, -- Hidden Street : Free Market<1>
+-- Guild Quest --
+	ExcavationSite = 990000000, --  Sharenian : Excavation Site
 }
 
 function mapFields.getID(key)

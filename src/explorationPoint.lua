@@ -1,3 +1,6 @@
+mapFields = require("lib/mapFields")
+mapEffects = require("lib/mapEffects")
+
 if target.field == 110000000 or target.field >= 100000000 and target.field < 105040300 then
 	-- TODO: questBeginnerExplorer = target.get_quest(29005) --Beginner Explorer	
 elseif target.field >= 105040300 and target.field <= 105090900 then
@@ -16,6 +19,6 @@ elseif target.field >= 240000000 and target.field <= 240050000 then
 	-- TODO: questMinarForestExplorer = target.get_quest(29011) --Minar Forest Explorer
 end
 
-if target.field == 104000000 then
-	target.screen_field_effect("maplemap/enter/104000000")
+if target.field == mapFields.getID("LithHarbor") then
+	target.screen_field_effect(mapEffects.getScreenFieldEffect("enter104000000"))
 end
