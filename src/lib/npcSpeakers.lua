@@ -1,6 +1,21 @@
 local npcSpeakers = {}
 
 local speakers = { 
+-- MapleIsland speakers --
+	Roger = 2000,
+	Sen = 2001,
+	Peter = 2002,
+	Robin = 2003,
+	Todd = 2004,
+	Sam = 2005 ,
+	Tienk = 2006,
+	MapleAdministrator = 2007,  
+	Sugar = 2008, 
+	Sera = 2100,
+	Heena = 2101,
+	Nina = 2102,
+	Maria =	2103, 
+	Pio = 10000,
 -- Edelstein speakers --
 	Jun = 2159000, 
 	Ulrika = 2159001, 

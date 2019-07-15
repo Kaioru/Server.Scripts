@@ -1,8 +1,9 @@
-quest = target.get_quest(21002)
+mapQuests = require "lib/mapQuests"
+mapEffects = require "lib/mapEffects"
+quest = target.get_quest(mapQuests.getID("AranTut"))
 
-if quest.record_key("mo1") == "o" then
-	--AranStart()
-    quest.update("mo1", "o")    
+if quest.record_key("mo1") == "o" then  
 	quest.update("mo2", "o")
-	target.avatar_oriented_effect("Effect/OnUserEff.img/guideEffect/aranTutorial/legendBalloon2")
+	-- pi.mapSound("Aran/balloon");
+	target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("legendBalloon2"))
 end

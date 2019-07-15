@@ -1,9 +1,14 @@
 local mapQuests = {}
 
 local quests = { 
+-- Aran Tutorial --
+	MissingChild = 21000 --??
+	AranTut = 21002
 -- Edelstein quests --
 	VitaEscape = 23007,
 	HideAndSeek = 23999
+-- Other quests --
+	FreeMarketQuest = 7600
 }
 
 local questExpRewards = {
