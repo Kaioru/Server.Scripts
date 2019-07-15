@@ -1,2 +1,4 @@
+mapEffects = require("lib/mapEffects")
+
 target.direction_mode = true
-target.squib_effect("Effect/Direction3.img/goAdventure/Scene" .. target.gender)
+target.squib_effect(mapEffects.getSquibEffect("goAdventureScene") .. target.gender)
