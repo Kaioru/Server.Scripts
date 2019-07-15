@@ -1,1 +1,3 @@
-target.avatar_oriented_effect("Effect/OnUserEff.img/guideEffect/resistanceTutorial/userTalk")
+mapEffects = require "lib/mapEffects"
+
+target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("userTalk"))

@@ -1,2 +1,4 @@
 -- TODO: video?
-target.screen_field_effect("temaD/enter/mushCatle")
+mapEffects = require("lib/mapEffects")
+
+target.screen_field_effect(mapEffects.getScreenFieldEffect("enterMushCastle"))
