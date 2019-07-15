@@ -18,11 +18,15 @@ local avatarOrientedEffects = {
 	legendBalloon6 = "Effect/OnUserEff.img/guideEffect/aranTutorial/legendBalloon6"
 }
 
-local screenFieldEffect = {
+local screenFieldEffects = {
 	enter104000000 = "maplemap/enter/104000000",
 }
 
-local reservedEffect = {
+local reservedEffects = {
+	scene0 = "Effect/Direction4.img/promotion/Scene0"
+	scene1 = "Effect/Direction4.img/promotion/Scene1"
+	scene2 = "Effect/Direction4.img/promotion/Scene2"
+	scene3 = "Effect/Direction4.img/promotion/Scene3"
 	meetWithDragon = "Effect/Direction4.img/meetWithDragon/Scene",
 	child = "Effect/Direction1.img/aranTutorial/Child",
 	clickChild = "Effect/Direction1.img/aranTutorial/ClickChild",
@@ -33,11 +37,11 @@ function mapEffects.getAvatarOrientedEffect(key)
 end
 
 function mapEffects.getScreenFieldEffect(key)
-    return screenFieldEffect[key]
+    return screenFieldEffects[key]
 end
 
 function mapEffects.getReservedEffect(key)
-    return reservedEffect[key]
+    return reservedEffects[key]
 end
 
 return mapEffects

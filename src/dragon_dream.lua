@@ -1,3 +1,4 @@
+mapFields = require "lib/mapFields"
 quest = target.get_quest(22012)
 speaker = self.as_speaker(0x1)
 
@@ -8,5 +9,5 @@ if quest.state == 0x1 then
     })
 
     quest.complete()
-    target.field = 900090101
+	target.field = mapFields.getID("Tutorial1")	
 end

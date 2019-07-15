@@ -1,2 +1,4 @@
+mapFields = require "lib/mapFields"
+
 target.play_portal_sound_effect()
-target.field = 100000201
+target.field = mapFields.getID("BowmanInstructionalSchool")

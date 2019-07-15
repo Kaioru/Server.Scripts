@@ -1,12 +1,14 @@
-if target.field == 900090000 then
+mapFields = require "lib/mapFields"
+
+if target.field == mapFields.getID("Teaser1") then
 	target.direction_mode = true
-    target.reserved_effect("Effect/Direction4.img/promotion/Scene0" .. target.gender)
-elseif target.field == 900090001 then
-    target.reserved_effect("Effect/Direction4.img/promotion/Scene1")
-elseif target.field == 900090002 then
-    target.reserved_effect("Effect/Direction4.img/promotion/Scene2" .. target.gender)
-elseif target.field == 900090003 then
-    target.reserved_effect("Effect/Direction4.img/promotion/Scene3")
-elseif target.field == 900090004 then
-	target.field = 900010000
+	target.reserved_effect(mapEffects.getReservedEffect("scene0") .. target.gender)
+elseif target.field == mapFields.getID("Teaser2") then
+    target.reserved_effect(mapEffects.getReservedEffect("scene1"))
+elseif target.field == mapFields.getID("Teaser3") then
+	target.reserved_effect(mapEffects.getReservedEffect("scene2") .. target.gender)
+elseif target.field == mapFields.getID("Teaser4") then
+	target.reserved_effect(mapEffects.getReservedEffect("scene3"))
+elseif target.field == mapFields.getID("Teaser5") then
+	target.field = mapFields.getID("Tutorial")
 end
