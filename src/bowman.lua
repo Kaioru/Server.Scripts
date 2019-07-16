@@ -1,23 +1,15 @@
 -- TODO: second job, third job
 charInventory = require "lib/charInventory"
+charConstants = require "lib/charConstants"
+charJob = require "lib/charJob"
 
-if target.job == 0 then
+if charJob.jobIsBeginner() then
 	self.say("So you want to become the Bowman??? Well...you need to meet some requirements to do so...at least #bLevel10#k. Let's see...hmm...")
-	if target.level >= 10 then
+	if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") then
 		self.say("You look qualified for this. With a great pair of eyes being able to spot the real monsters and have the coldhearted skills to shoot the arrow through them...we needed someone like that. Do you want to become a Bowman?")
 		self.say("Alright! You are the Bowman from here on out, because I said so...haha here's a little bit of my power to you...Haahhhh!")
 
-		target.sp = (target.level - 10) * 3 + 1
-		target.job = 300
-        target.max_hp = target.max_hp + 100 + math.random(50)
-        target.max_mp = target.max_mp + 25 + math.random(25)
-        target.hp = target.max_hp
-        target.mp = target.max_mp
-		target.str = 4
-		target.dex = 25
-		target.int = 4
-		target.luk = 4
-		target.ap = (target.level - 1) * 5 - 12
+		charJob.setStatsBowman1stJob()
 		charInventory.giveBowman1stJobItems()
 		charInventory.increaseEQPslots(1)
 		charInventory.increaseUSEslots(1)

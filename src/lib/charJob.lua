@@ -7,7 +7,7 @@ local privilegedUsers = {manager = 800, gm = 900, superGM = 910}
 local citizen = 3000
 local mechanics = {mechanic1 = 3500, mechanic2 = 3510, mechanic3 = 3511, mechanic4 = 3512}
 local wildHunters = {wildHunter1 = 3300, wildHunter2 = 3310, wildHunter3 = 3311, wildHunter4 = 3312}
-local battleMages = {battleMages1 = 3200, battleMages2 = 3210, battleMages3 = 3211, battleMages4 = 3212}
+local battleMages = {battleMage1 = 3200, battleMage2 = 3210, battleMage3 = 3211, battleMage4 = 3212}
 local jobsResistance = {citizen, mechanics, wildHunters, battleMages}
 
 local beginner = 0
@@ -109,6 +109,94 @@ function charJob.checkIfJobBelongsToDualBlades()
 	else
 		return false
 	end
+end
+
+function charJob.jobIsBeginner()
+	if job == beginner then
+		return true
+	else
+		return false
+end
+
+-- Char Job Advencement --
+function charJob.setStatsWarrior1stJob()	
+	target.job = warrior	 
+	target.sp = (target.level - 10) * 3 + 1
+	target.ap = (target.level - 1) * 5 - 12
+	target.max_hp = target.max_hp + 200 + math.random(50)
+	target.hp = target.max_hp
+	target.str = 35
+	target.dex = 4
+	target.int = 4
+	target.luk = 4
+end
+
+function charJob.setStatsMagician1stJob()	
+	target.job = magician
+	target.sp = (target.level - 8) * 3 + 1
+	target.ap = (target.level - 1) * 5 - 7
+	target.max_mp = target.max_mp + 100 + math.random(50)
+	target.mp = target.max_mp
+	target.str = 4
+	target.dex = 4
+	target.int = 20
+	target.luk = 4
+end
+
+function charJob.setStatsBowman1stJob()	
+	target.job = bowman
+	target.sp = (target.level - 10) * 3 + 1
+	target.ap = (target.level - 1) * 5 - 12
+    target.max_hp = target.max_hp + 100 + math.random(50)
+    target.max_mp = target.max_mp + 25 + math.random(25)
+    target.hp = target.max_hp
+    target.mp = target.max_mp
+	target.str = 4
+	target.dex = 25
+	target.int = 4
+	target.luk = 4
+end
+
+function charJob.setStatsThief1stJob()	
+	target.job = thief
+	target.sp = (target.level - 10) * 3 + 1
+	target.ap = (target.level - 1) * 5 - 12
+	target.max_hp = target.max_hp + 100 + math.random(50)
+	target.max_mp = target.max_mp + 25 + math.random(25)
+	target.hp = target.max_hp
+	target.mp = target.max_mp
+	target.str = 4
+	target.dex = 25
+	target.int = 4
+	target.luk = 4
+end
+
+function charJob.setStatsPirate1stJob()	
+	target.job = pirate
+	target.sp = (target.level - 10) * 3 + 1
+	target.ap = (target.level - 1) * 5 - 7
+	target.max_hp = target.max_hp + 150
+	target.max_mp = target.max_mp + 50
+	target.hp = target.max_hp
+	target.mp = target.max_mp
+	target.str = 4
+	target.dex = 20
+	target.int = 4
+	target.luk = 4
+end
+
+function charJob.setStatsBattleMage1stJob()	
+	target.job = battleMage1
+	target.set_extend_sp(1, (target.level - 10) * 3 + 5)
+	target.ap = (target.level - 1) * 5 - 12
+	target.max_hp = target.max_hp + 150 + math.random(25)
+    target.max_mp = target.max_mp + 100 + math.random(50)
+    target.hp = target.max_hp
+    target.mp = target.max_mp
+	target.str = 4
+	target.dex = 4
+	target.int = 20
+	target.luk = 4
 end
 
 return charJob

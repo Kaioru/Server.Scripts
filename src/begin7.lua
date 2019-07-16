@@ -3,7 +3,7 @@ charConstants = require "lib/charConstants"
 mapFields = require "lib/mapFields"
 
 if self.ask_yes_no("Take this ship and you'll head off to a bigger continent. For #e150 mesos#n I'll take you to #bVictoria Island#k. The thing is, once  you leave this place, you can't ever come back. What do you think? Do you want to go to Victoria Island?") then
-	if target.level < charConstants.getLvlCheckValue("MapleToVictoriaLvlCheck") then 
+	if target.level < charConstants.getLvlCheckValue("mapleToVictoria") then 
 		self.say("Let's see... I don't think you are strong enough. You'll have to be at least #bLevel 7#k to go to Victoria Island.")
 	else
 		if charInventory.hasRecommendationLetter() then
@@ -12,10 +12,10 @@ if self.ask_yes_no("Take this ship and you'll head off to a bigger continent. Fo
 			charInventory.removeRecommendationLetter()
 			target.field = mapFields.getID("IntroVictoria")
 		else
-			if target.money >= charConstants.getFeeValue("MapleToVictoriaFee") then
+			if target.money >= charConstants.getFeeValue("mapleToVictoria") then
 				 self.say("Bored of this place? Here... Give me 150 mesos first...")
 				 self.say("Awesome! #e150 mesos#n accepted! Alright, off to Victoria Island!")
-				 target.money = target.money - charConstants.getFeeValue("MapleToVictoriaFee")
+				 target.money = target.money - charConstants.getFeeValue("mapleToVictoria")
 				 target.field = mapFields.getID("IntroVictoria")
 			else
 				self.say("What? You're telling me you wanted to go without any money? You're one weirdo...")
