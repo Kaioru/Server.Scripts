@@ -1,21 +1,15 @@
 -- TODO: second job, third job
 charInventory = require "lib/charInventory"
+charConstants = require "lib/charConstants"
+charJob = require "lib/charJob"
 
-if target.job == 0 then
+if charJob.jobIsBeginner() then
 	self.say("Do you want to be a Magician? You need to meet some requirements in order to do so. You need to be at least at #bLevel 8#k. Let's see if you have what it takes to become a Magician...")
-	if target.level >= 10 then
+	if target.level >= charConstants.getLvlCheckValue("firstJobAdvMagician") then
 		self.say("You definitely have the look of a Magician. You may not be there yet, but I can see the Magician in you...what do you think? Do you want to become the Magician?")
 		self.say("Alright, you're a Magician from here on out, since I, Grendel the Really old, the head Magician, allow you so. It isn't much, but I'll give you a little bit of what I have...")
 
-		target.sp = (target.level - 8) * 3 + 1
-		target.job = 200
-        target.max_mp = target.max_mp + 100 + math.random(50)
-        target.mp = target.max_mp
-		target.str = 4
-		target.dex = 4
-		target.int = 20
-		target.luk = 4
-		target.ap = (target.level - 1) * 5 - 7
+		charJob.setStatsMagician1stJob()
 		charInventory.giveMagician1stJobItems()
 		
 		self.say("You have just equipped yourself with much more magicial power. Please keep training and make yourself much better...I'll be watching you from here and there...")

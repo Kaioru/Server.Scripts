@@ -1,11 +1,13 @@
 local charConstants = {}
 
 local messosFee = { 
-	MapleToVictoriaFee = 150
+	mapleToVictoria = 150,
 }
 
 local levelChecks = {
-	MapleToVictoriaLvlCheck = 7
+	mapleToVictoria = 7,
+	firstJobAdvMagician = 8,
+	firstJobAdvOther = 10,
 }
 
 function charConstants.getFeeValue(key)

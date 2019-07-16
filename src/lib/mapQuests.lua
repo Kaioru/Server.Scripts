@@ -15,6 +15,8 @@ local quests = {
 	RogersApple = 1021,
 	Minimap = 1031,
 	AttackPickUpSkill = 1035,
+-- Dual Blade Missions --
+	Infiltration = 2351, -- First Mission: Infiltration
 -- Other quests --
 	FreeMarketQuest = 7600,
 -- Aran Tutorial --
@@ -25,6 +27,7 @@ local quests = {
 	EvanTut = 22013,
 -- Edelstein quests --
 	VitaEscape = 23007,
+	Resistance1stJob = 23011,
 	HideAndSeek = 23999,
 }
 

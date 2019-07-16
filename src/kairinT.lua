@@ -1,27 +1,19 @@
 -- TODO: second job, third job
 charInventory = require "lib/charInventory"
+charConstants = require "lib/charConstants"
+charJob = require "lib/charJob"
 
 self.ask_menu("Have you got something to say?", {
     [0] = "I would like to learn more about pirates.."
 })
 
-if target.job == 0 then
+if charJob.jobIsBeginner() then
 	self.say("Do you wish to become a Pirate? You'll need to meet our set of standard if you are to become one of us. I need you to be #bat least at Level 10#k. Let's see...")
-	if target.level >= 10 then
+	if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") then
 		self.say("You seem more than qualified! Great, are you ready to become one of us?")
 		self.say("Welcome to the band of Pirates! You may have to spend some time as a wanderer at first, but better days will certainly dawn upon you, sooner than you think! In the mean time, let me share some of my abilities with you.")
-
-		target.sp = (target.level - 10) * 3 + 1
-		target.job = 500
-        target.max_hp = target.max_hp + 150
-        target.max_mp = target.max_mp + 50
-        target.hp = target.max_hp
-        target.mp = target.max_mp
-		target.str = 4
-		target.dex = 20
-		target.int = 4
-		target.luk = 4
-		target.ap = (target.level - 1) * 5 - 7
+		
+		charJob.setStatsPirate1stJob()
 		charInventory.givePirate1stJobItems()
 		charInventory.increaseEQPslots(1)
 		charInventory.increaseETCslots(1)
