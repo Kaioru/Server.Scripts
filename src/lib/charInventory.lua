@@ -57,6 +57,17 @@ function charInventory.increaseCSHslots(n)
 	inventory.set_inventory_limit(CSH, charInventory.getCSHslotCount() + n)
 end
 
+function charInventory.giveRogersApple()
+	if inventory.item_count(2010007) < 1 then
+		inventory.add(2010007, 1)
+	end
+end
+
+function charInventory.giveRogersReward()
+	inventory.add(2000000, 3)
+	inventory.add(2010009, 3)
+end
+
 function charInventory.hasRecommendationLetter()
 	if inventory.item_count(4031801) > 0 then -- Lucas's Recommendation Letter
 		return true;

@@ -1,4 +1,5 @@
 npcSpeakers = require "lib/npcSpeakers"
+mapEffects = require "lib/mapEffects"
 mapQuests = require "lib/mapQuests"
 mapFields = require "lib/mapFields"
 
@@ -14,7 +15,7 @@ if quest.record_key("vel00") != "1" then
 	})
 
 	quest.update("vel00", "1") 
-	target.reserved_effect("Effect/Direction4.img/Resistance/ClickVel")
+	target.reserved_effect(mapEffects.getReservedEffect("clickVel"))
 elseif (quest.record_key("vel00") == "1" and quest.record_key("vel01") != "1") then
 	self.say ({
 		vita.get_speech("My name is #bVita#k. I'm one of #rDoctor Gelimer's#k test subjects. But that's not important right now. You have to get out of here before someone sees you!"),

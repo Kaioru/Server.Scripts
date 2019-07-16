@@ -2,15 +2,15 @@ local mapEffects = {}
 
 local avatarOrientedEffects = {
 -- Adventurer tutorial --
-	infoAttack = "UI/tutorial.img/20"
-	infoPickUp = "UI/tutorial.img/21"
-	infoReactor1 = "UI/tutorial.img/22"
-	infoSkill = "UI/tutorial.img/23"
+	infoAttack = "UI/tutorial.img/20",
+	infoPickUp = "UI/tutorial.img/21",
+	infoReactor1 = "UI/tutorial.img/22",
+	infoSkill = "UI/tutorial.img/23",
 	-- = "UI/tutorial.img/24" -- ??
-	infoMinimap = "UI/tutorial.img/25"
-	infoWorldMap = "UI/tutorial.img/26"
-	infoReactor2 = "UI/tutorial.img/27"
-	infoHPAlert = "UI/tutorial.img/28" -- todo:check
+	infoMinimap = "UI/tutorial.img/25",
+	infoWorldMap = "UI/tutorial.img/26",
+	infoReactor2 = "UI/tutorial.img/27",
+	infoHPAlert = "UI/tutorial.img/28", -- todo:check
 
 -- Aran Tutorial --
 	character = "Effect/OnUserEff.img/guideEffect/aranTutorial/character", --unused yet
@@ -53,7 +53,7 @@ local avatarOrientedEffects = {
 	evan0 = "UI/tutorial/evan/5/0",
 
 -- Resistance Tutorial --
-	userTalk = "Effect/OnUserEff.img/guideEffect/resistanceTutorial/userTalk"
+	userTalk = "Effect/OnUserEff.img/guideEffect/resistanceTutorial/userTalk",
 }
 
 local screenFieldEffects = {
@@ -71,24 +71,33 @@ local screenFieldEffects = {
 	enter104000000 = "maplemap/enter/104000000",
 -- Mushroom Castle --
 	enterMushCatle = "temaD/enter/mushCatle",
+-- Evan Dragon --
+	dragonTalk00 = "evan/dragonTalk00",
+	dragonTalk01 = "evan/dragonTalk01",
+-- Resistance Tutorial --
+    tutorialGuide = "resistance/tutorialGuide",
 }
 
 local reservedEffects = {
 	goLithScene = "Effect/Direction3.img/goLith/Scene",
-	-- Evan Tut Scenes --
+-- Evan Tut Scenes --
 	promotionScene0 = "Effect/Direction4.img/promotion/Scene0",
 	promotionScene1 = "Effect/Direction4.img/promotion/Scene1",
 	promotionScene2 = "Effect/Direction4.img/promotion/Scene2",
 	promotionScene3 = "Effect/Direction4.img/promotion/Scene3",
-	promiseDragonScene0 = "Effect/Direction4.img/PromiseDragon/Scene0"
+	promiseDragonScene0 = "Effect/Direction4.img/PromiseDragon/Scene0",
 	meetWithDragonScene = "Effect/Direction4.img/meetWithDragon/Scene",
-	-- Aran Tut Scenes
+-- Aran Tut Scenes --
 	child = "Effect/Direction1.img/aranTutorial/Child",
 	clickChild = "Effect/Direction1.img/aranTutorial/ClickChild",
 	clickLilin = "Effect/Direction1.img/aranTutorial/ClickLilin",
 	clickPoleArm = "Effect/Direction1.img/aranTutorial/ClickPoleArm",
-	face = "Effect/Direction1.img/aranTutorial/face"
-	trio = "Effect/Direction1.img/aranTutorial/Trio"
+	face = "Effect/Direction1.img/aranTutorial/face",
+	trio = "Effect/Direction1.img/aranTutorial/Trio",
+-- Resistance Tut Scenes --
+	talkJ = "Effect/Direction4.img/Resistance/TalkJ",	
+	clickVel = "Effect/Direction4.img/Resistance/ClickVel",
+	talkInLab =	"Effect/Direction4.img/Resistance/TalkInLab",
 }
 
 local squibEffects = {

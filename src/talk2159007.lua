@@ -1,4 +1,5 @@
 npcSpeakers = require "lib/npcSpeakers"
+mapEffects = require "lib/mapEffects"
 mapQuests = require "lib/mapQuests"
 mapFields = require "lib/mapFields"
 
@@ -14,6 +15,7 @@ if quest.record_key("vel01") != "2" then
 		vita2.get_speech("Of course not!"),
 		target.get_speech("Then hurry up! Let's go!")
 	})
+
 	quest.update("vel00", "2")
 	quest.update("vel01", "2")
 	target.transfer_field(mapFields.getID("NeglectedRockyMountain3"), 1)
@@ -22,9 +24,10 @@ elseif quest.record_key("vel01") == "2" then
 		vita2.get_speech("It's been...a really long time since I've been outside the laboratory. Where are we?"),
 		target.get_speech("This is the road that leads to Edelstein, where I live! Let's get out of here before the Black Wings follow us.")
 	})
+
 	quest.update("vel00", "2")
 	quest.update("vel01", "3")
-	target.avatar_oriented_effect("Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialArrow1")
+	target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("tutorialArrow1"))
 else
 	self.say("It's been...a really long time since I've been outside the laboratory.")
 end
