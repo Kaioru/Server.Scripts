@@ -12,6 +12,7 @@ local quests = {
 -- Adventurer Tutorial --
 	Reactor1 = 1008,
 	Reactor2 = 1020,
+	RogersApple = 1021,
 	Minimap = 1031,
 	AttackPickUpSkill = 1035,
 -- Other quests --
@@ -28,7 +29,9 @@ local quests = {
 }
 
 local questExpRewards = {
--- Edelstein quests exp rewards --
+-- Maple Island quest rewards --
+	RogersAppleFinish = 10,
+-- Edelstein quests rewards --
 	KidFound3 = 3,
 	KidFound5 = 5,
 	VitaEscapeBegin = 35,

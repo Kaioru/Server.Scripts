@@ -1,1 +1,3 @@
-target.reserved_effect("Effect/Direction4.img/Resistance/TalkJ")	
+mapEffects = require("lib/mapEffects")
+
+target.reserved_effect(mapEffects.getReservedEffect("talkJ"))

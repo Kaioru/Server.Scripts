@@ -1,4 +1,5 @@
 npcSpeakers = require "lib/npcSpeakers"
+mapEffects = require "lib/mapEffects"
 mapQuests = require "lib/mapQuests"
 
 quest = target.get_quest(mapQuests.getID("VitaEscape"))
@@ -18,4 +19,4 @@ self.say({
 })
 
 target.direction_mode = true
-target.reserved_effect("Effect/Direction4.img/Resistance/TalkInLab")
+target.reserved_effect(mapEffects.getReservedEffect("talkInLab"))
