@@ -11,7 +11,6 @@ local avatarOrientedEffects = {
 	infoWorldMap = "UI/tutorial.img/26",
 	infoReactor2 = "UI/tutorial.img/27",
 	infoHPAlert = "UI/tutorial.img/28", -- todo:check
-
 -- Aran Tutorial --
 	character = "Effect/OnUserEff.img/guideEffect/aranTutorial/character", --unused yet
 	-- Aran tut balloons --
@@ -29,7 +28,6 @@ local avatarOrientedEffects = {
 	tutorialGuide1 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialGuide1",
 	tutorialGuide2 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialGuide2", --unused yet
 	tutorialGuide3 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialGuide3", --unused yet
-
 -- Evan Tutorial --
 	evanBalloon00 = "Effect/OnUserEff.img/guideEffect/evanTutorial/evanBalloon00",
 	evanBalloon01 = "Effect/OnUserEff.img/guideEffect/evanTutorial/evanBalloon01",
@@ -51,7 +49,6 @@ local avatarOrientedEffects = {
 	evan0 = "UI/tutorial/evan/3/0",
 	evan0 = "UI/tutorial/evan/4/0",
 	evan0 = "UI/tutorial/evan/5/0",
-
 -- Resistance Tutorial --
 	userTalk = "Effect/OnUserEff.img/guideEffect/resistanceTutorial/userTalk",
 }
@@ -79,22 +76,28 @@ local screenFieldEffects = {
 }
 
 local reservedEffects = {
+-- Adventurer TuT --
 	goLithScene = "Effect/Direction3.img/goLith/Scene",
--- Evan Tut Scenes --
+	swordmanScene = "Effect/Direction3.img/swordman/Scene",
+	magicianScene = "Effect/Direction3.img/magician/Scene",
+	archerScene = "Effect/Direction3.img/archer/Scene", 
+	rogueScene = "Effect/Direction3.img/rogue/Scene",
+	pirateScene = "Effect/Direction3.img/pirate/Scene",
+-- Evan Tut --
 	promotionScene0 = "Effect/Direction4.img/promotion/Scene0",
 	promotionScene1 = "Effect/Direction4.img/promotion/Scene1",
 	promotionScene2 = "Effect/Direction4.img/promotion/Scene2",
 	promotionScene3 = "Effect/Direction4.img/promotion/Scene3",
 	promiseDragonScene0 = "Effect/Direction4.img/PromiseDragon/Scene0",
 	meetWithDragonScene = "Effect/Direction4.img/meetWithDragon/Scene",
--- Aran Tut Scenes --
+-- Aran Tut --
 	child = "Effect/Direction1.img/aranTutorial/Child",
 	clickChild = "Effect/Direction1.img/aranTutorial/ClickChild",
 	clickLilin = "Effect/Direction1.img/aranTutorial/ClickLilin",
 	clickPoleArm = "Effect/Direction1.img/aranTutorial/ClickPoleArm",
 	face = "Effect/Direction1.img/aranTutorial/face",
 	trio = "Effect/Direction1.img/aranTutorial/Trio",
--- Resistance Tut Scenes --
+-- Resistance Tut --
 	talkJ = "Effect/Direction4.img/Resistance/TalkJ",	
 	clickVel = "Effect/Direction4.img/Resistance/ClickVel",
 	talkInLab =	"Effect/Direction4.img/Resistance/TalkInLab",

@@ -9,6 +9,11 @@ local fields = {
 	AdventurerTrainingCenter3 = 1010300, -- Maple Road : Adventurer Training Center 3
 	AdventurerTrainingCenter4 = 1010400, -- Maple Road : Adventurer Training Center 4
 	SouthperryArmorStore = 2000001, -- Maple Road : Southperry Armor Store
+	ShowSwordsman = 001020100, -- onUserEnter = goSwordman
+	ShowMagician = 001020200, -- onUserEnter = goMagician
+	ShowArcher = 001020300, -- onUserEnter = goArcher
+	ShowRogue = 001020400, -- onUserEnter = goRogue
+	ShowPirate = 001020500, -- onUserEnter = goPirate
 -- Henesys --
 	HenesysPark = 100000200, -- Henesys : Henesys Park
 	BowmanInstructionalSchool = 100000201, -- Henesys : Bowman Instructional School
