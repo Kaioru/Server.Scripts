@@ -15,8 +15,12 @@ local fields = {
 	ShowRogue = 001020400, -- onUserEnter = goRogue
 	ShowPirate = 001020500, -- onUserEnter = goPirate
 -- Henesys --
+	Henesys = 100000000, -- Henesys : Henesys
 	HenesysPark = 100000200, -- Henesys : Henesys Park
 	BowmanInstructionalSchool = 100000201, -- Henesys : Bowman Instructional School
+	GolemsTempleEntrance = 100040000, -- Golem's Temple : Golem's Temple Entrance
+	Sleepywood = 105040300, -- Dungeon : Sleepywood
+	BalrogsDisappearanceSite = 105100401, -- Balrog Temple : Balrog's Disappearance Site
 -- Victoria Road --
 	KerningCityBackAlley = 103050000, -- Victoria Road : Kerning City Back Alley
 	--103050100 // Victoria Road : The Secret Garden 2nd Floor
@@ -24,11 +28,13 @@ local fields = {
 	--103050200 // Victoria Road : The Secret Garden 1st Floor
 	--103050300 // Victoria Road : The Secret Garden Basement
 -- Victoria Island --
+	GreenTreeTrunk = 101030100, -- North Forest : Green Tree Trunk
 	LithHarbor = 104000000, -- Lith Harbor : Lith Harbor
 	LithHarborArmorStore = 104000001, -- Lith Harbor : Lith Harbor Armor Store
 	LithHarborGeneralStore = 104000002,	-- Lith Harbor : Lith Harbor General Store
 	LithHarborWeaponStore = 104000003, -- Lith Harbor : Lith Harbor Weapon Store
 	TrusInfoShop = 104000004, -- Lith Harbor : Tru's Info Shop
+	StationToOrbis = 104020110, -- Port Road : Station to Orbis
 	PenguinPort = 140020300, -- Snow Island : Penguin Port
 -- Swamp --
 	SilentSwamp = 105010000, -- Swamp : Silent Swamp
@@ -38,6 +44,46 @@ local fields = {
 	MushroomForestField = 106020000, -- Mushroom Castle : Mushroom Forest Field
 	CastleWallEdge = 106020501, -- Mushroom Castle : Castle Wall Edge
 	CastleWall6 = 106021300, -- Mushroom Castle : Castle Wall 6
+-- Orbis --
+	Orbis = 200000000, -- Orbis : Orbis
+	OrbisStationEntrance = 200000100, -- Orbis : Orbis Station Entrance
+	StationPassageway<VictoriaBound> = 200000110, -- Orbis : Station Passageway <Victoria Bound>
+	--200000111 // Orbis : Station <Victoria Bound>
+	--200000112 // Orbis : Pre-Departure <Victoria Bound>
+	StationPathway<Ludibrium> = 200000120, -- Orbis : Station Pathway<Ludibrium>
+	--200000121 // Orbis : Station<Ludibrium>
+	--200000122 // Orbis : Before the Departure <Ludibrium>
+	CabinPath<ToLeafre> = 200000130, -- Orbis : Cabin Path <To Leafre>
+	--200000131 // Orbis : Cabin <To Leafre>
+	--200000132 // Orbis : Cabin <To Leafre>
+	CabinPath<ToMuLung> = 200000140, -- Orbis : Cabin Path <To Mu Lung>
+	--200000141 // Orbis : Cabin <To Mu Lung>
+	StationTunnel<ToAriant> = 200000150, -- Orbis : Station Tunnel <To Ariant>
+	--200000151 // Orbis : Station <To Ariant>
+	--200000152 // Orbis : Station <To Ariant>
+	StationHall = 200000160, -- Orbis : Station Hall
+	--200000161 // Orbis : Station <To Ereve>
+	Station<EdelsteinBound> 200000170, -- Orbis : Station <Edelstein Bound>
+	IcyColdField = 211050000, -- El Nath : Icy Cold Field
+-- Ludibrium --
+	Ludibrium = 220000000, -- Ludibrium : Ludibrium
+	DogonsHQ = 221040402, -- Hidden Street : Dogon's HQ
+-- Korean Folk Town --
+	KoreanFolkTown = 222000000, -- Korean Folk Town : Korean Folk Town
+	GoblinHouse = 222010402, -- Hidden Street : Goblin House
+-- Aquarium --
+	Aquarium = 230000000, -- Aquarium : Aquarium
+	TheCaveOfPianus = 230040420, -- Aqua Road : The Cave of Pianus
+-- Leafre --
+	Leafre = 240000000, -- Leafre : Leafre
+	MinarForestWestBorder = 240010100, -- Leafre : Minar Forest : West Border
+	CrimsonSkyNest = 240080500, -- Leafre : Crimson Sky Nest
+-- MuLung --
+	MuLung = 250000000, -- Mu Lung : Mu Lung
+	IsolatedSwamp = 251010500, -- Herb Town : Isolated Swamp
+-- Ariant --
+	Ariant = 260000000, -- The Burning Road : Ariant
+	BlackMagiciansLab = 261040000, -- Hidden Street : Black Magician's Lab
 -- Edelstein --
 	Edelstein = 310000000, -- Black Wing Territory : Edelstein
 	EdelsteinCityHall =	310000001, -- Edelstein : Edelstein City Hall
