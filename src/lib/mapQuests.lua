@@ -15,6 +15,10 @@ local quests = {
 	RogersApple = 1021,
 	Minimap = 1031,
 	AttackPickUpSkill = 1035,
+	MaiFirstTrainnig = 1041, -- Mai's First Training
+	MaiSecondTrainnig = 1042, -- Mai's Second Training
+	MaiThirdTrainnig = 1043, -- Mai's Third Training
+	MaiFinalTrainnig = 1044, -- Mai's Final Training
 -- Dual Blade Missions --
 	Infiltration = 2351, -- First Mission: Infiltration
 -- Other quests --
@@ -25,9 +29,18 @@ local quests = {
 -- Evan Tutorial --
 	DragonEyes = 22012,
 	EvanTut = 22013,
--- Edelstein quests --
+-- Evan --
+	KiddnapingOfCamila = 22557, -- Kidnapping of Camila
+-- Edelstein Tutorial --
 	VitaEscape = 23007,
 	Resistance1stJob = 23011,
+	AStudentResistanceBattleMage = 23100, -- A Student of the Resistance [Battle Mage]
+	AStudentResistanceWildHunter = 23101, -- A Student of the Resistance [Wild Hunter]
+	AStudentResistanceMechanic = 23102, -- A Student of the Resistance [Mechanic]
+	AgilityTraining = 23103, 
+	AttackTraining = 23104, 
+	EnduranceTraining = 23105, 
+	FinalTraining Course = 23106,
 	HideAndSeek = 23999,
 }
 

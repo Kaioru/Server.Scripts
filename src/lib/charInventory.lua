@@ -79,6 +79,17 @@ function charInventory.removeRecommendationLetter()
 	inventory.remove(4031801, 1)
 end
 
+function charInventory.hasMagicSeed()
+	if inventory.item_count(4031346) > 0 then -- Magic Seed
+		return true;
+	end
+	return false;
+end
+
+function charInventory.removeMagicSeed()
+	inventory.remove(4031346, 1)
+end
+
 function charInventory.giveBowman1stJobItems()
 	inventory.add(1452051, 1)    -- Give beginner bow
 	inventory.add(2060000, 6000) -- Give arrrows

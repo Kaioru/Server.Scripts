@@ -1,10 +1,12 @@
-inventory = target.get_inventory()
-field = target.field == 101030100 and 240010100 or 101030100
-portal = target.field == 101030100 and "elli00" or "minar00"
+mapFields = require "lib/mapFields"	
+charInventory = require "lib/charInventory"
 
-if inventory.item_count(4031346) > 0 then
+field = target.field == mapsFields.getID("GreenTreeTrunk") and mapsFields.getID("MinarForestWestBorder") or mapsFields.getID("GreenTreeTrunk")
+portal = target.field == mapsFields.getID("GreenTreeTrunk") and "elli00" or "minar00"
+
+if charInventory.hasMagicSeed() then
     target.message("The magical seed is spent and you are transferred to somewhere.")
-    inventory.remove(4031346)
+    charInventory.removeMagicSeed()
     target.transfer_field(field, portal)
 else
     target.message("You need a magic seed to use this portal.")

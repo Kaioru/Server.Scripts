@@ -1,7 +1,7 @@
 local npcSpeakers = {}
 
 local speakers = { 
--- MapleIsland speakers --
+-- MapleIsland --
 	Roger = 2000,
 	Sen = 2001,
 	Peter = 2002,
@@ -16,7 +16,10 @@ local speakers = {
 	Nina = 2102,
 	Maria =	2103, 
 	Pio = 10000,
--- Edelstein speakers --
+-- Orbis --
+	IsaStationGuide = 2012006, -- Isa the Station Guide
+-- Edelstein --
+	Elex = 2151000, -- Elex Trainning Instructor, Ferdi after MapleHeroes patch
 	Jun = 2159000, 
 	Ulrika = 2159001, 
 	Von = 2159002,

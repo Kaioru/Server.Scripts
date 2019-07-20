@@ -1,8 +1,12 @@
-quest = target.get_quest(22557)
-target.field = 100040000
+mapFields = require "lib/mapFields"
+mapQuests = require "lib/mapQuests"
 
-if quest.state != 0x0 then
+quest = target.get_quest(mapQuests.getID("KiddnapingOfCamila")) -- Evan only
+
+target.field = mapFields.getID("GolemsTempleEntrance")
+
+if quest.state == mapQuests.getState("Perform") then
 	quest.complete()
-	--	pi.playerMessage(5, "Camilla rescued!");
+	--	pi.playerMessage(5, "Camila rescued!");
 	target.sp = target.sp + 1
 end
