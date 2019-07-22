@@ -1,7 +1,7 @@
 local npcSpeakers = {}
 
 local speakers = { 
--- MapleIsland --
+-- Maple Island --
 	Roger = 2000,
 	Sen = 2001,
 	Peter = 2002,
@@ -22,6 +22,8 @@ local speakers = {
 	GrendelTheReallyOld	= 1032001, -- Grendel the Really Old
 	DarkLord = 1052001, -- Dark Lord
 	Kyrin = 1090000, -- Kyrin
+-- Ereve --
+	Cygnus = 1101000, -- Cygnus
 -- Orbis --
 	IsaStationGuide = 2012006, -- Isa the Station Guide
 -- Edelstein --
@@ -35,6 +37,9 @@ local speakers = {
 	J = 2159010,
 	SuspiciousHollow = 2159011,
 	Gelimer = 2159012,
+-- Other --
+	DalairBeginExplorer = 9000066,
+	DalairEndExplorer = 9000040,
 }
 
 function npcSpeakers.getID(key)
