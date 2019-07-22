@@ -14,36 +14,68 @@ local fields = {
 	ShowArcher = 001020300, -- onUserEnter = goArcher
 	ShowRogue = 001020400, -- onUserEnter = goRogue
 	ShowPirate = 001020500, -- onUserEnter = goPirate
--- Henesys --
+-- Victoria Island --
+	-- Henesys --
 	Henesys = 100000000, -- Henesys : Henesys
 	HenesysPark = 100000200, -- Henesys : Henesys Park
 	BowmanInstructionalSchool = 100000201, -- Henesys : Bowman Instructional School
+	HallOfBowmen = 100000204, -- Henesys : Hall of Bowmen
 	GolemsTempleEntrance = 100040000, -- Golem's Temple : Golem's Temple Entrance
-	Sleepywood = 105040300, -- Dungeon : Sleepywood
-	BalrogsDisappearanceSite = 105100401, -- Balrog Temple : Balrog's Disappearance Site
--- Victoria Road --
+	-- Ellinia --
+	Ellinia = 101000000, -- Ellinia : Ellinia
+	-- ElliniaWeaponStore = 101000001, -- Ellinia : Ellinia Weapon Store
+	-- ElliniaGeneralStore = 101000002, -- Ellinia : Ellinia General Store
+	MagicLibrary = 101000003, -- Ellinia : Magic Library
+	HallOfMagicians = 101000004, -- Ellinia : Hall of Magicians
+	GreenTreeTrunk = 101030100, -- North Forest : Green Tree Trunk
+	-- Perion --
+	Perion = 102000000, -- Perion : Perion
+	-- PerionWeaponStore = 102000001, // Perion : Perion Weapon Store
+	-- PerionGeneralStore = 102000002, // Perion : Perion General Store
+	WarriorsSanctuary = 102000003, -- Perion : Warriors' Sanctuary
+	HallOfWarriors = 102000004, -- Perion : Hall of Warriors
+	-- Kerning City --
+	KerningCity = 103000000, -- Kerning City : Kerning City
+	--KerningCitySelf-DefenceItemStore = 103000001, -- Kerning City : Kerning City Self-Defence Item Store
+	--KerningCityPharmacy = 103000002, -- Kerning City : Kerning City Pharmacy
+	Hideout = 103000003, -- Kerning City : Hideout
+	HallOfThieves = 103000008, -- Kerning City : Hall of Thieves
+	-- Victoria Road --
 	KerningCityBackAlley = 103050000, -- Victoria Road : Kerning City Back Alley
 	--103050100 // Victoria Road : The Secret Garden 2nd Floor
 	--103050101 // Victoria Road : Lady Syl's Room
 	--103050200 // Victoria Road : The Secret Garden 1st Floor
 	--103050300 // Victoria Road : The Secret Garden Basement
--- Victoria Island --
-	GreenTreeTrunk = 101030100, -- North Forest : Green Tree Trunk
+	 -- Lith Harbor --
 	LithHarbor = 104000000, -- Lith Harbor : Lith Harbor
 	LithHarborArmorStore = 104000001, -- Lith Harbor : Lith Harbor Armor Store
 	LithHarborGeneralStore = 104000002,	-- Lith Harbor : Lith Harbor General Store
 	LithHarborWeaponStore = 104000003, -- Lith Harbor : Lith Harbor Weapon Store
 	TrusInfoShop = 104000004, -- Lith Harbor : Tru's Info Shop
 	StationToOrbis = 104020110, -- Port Road : Station to Orbis
-	PenguinPort = 140020300, -- Snow Island : Penguin Port
 -- Swamp --
 	SilentSwamp = 105010000, -- Swamp : Silent Swamp
 	-- 105010100 // Swamp : Humid Swamp
 	-- 105010200 // Swamp : Secret Swamp
+-- Dungeon --
+	Sleepywood = 105040300, -- Dungeon : Sleepywood
+	BalrogsDisappearanceSite = 105100401, -- Balrog Temple : Balrog's Disappearance Site
 -- Mushroom Castle --
 	MushroomForestField = 106020000, -- Mushroom Castle : Mushroom Forest Field
 	CastleWallEdge = 106020501, -- Mushroom Castle : Castle Wall Edge
 	CastleWall6 = 106021300, -- Mushroom Castle : Castle Wall 6
+-- Nautilus --
+	NautilusHarbor = 120000000, -- Nautilus : Nautilus Harbor
+	Nautilus = 120000100, -- Nautilus : Nautilus
+	NavigationRoom = 120000101, --  Nautilus : Navigation Room
+-- Empress Road --
+	Ereve = 130000000, -- Empress' Road : Ereve
+	KnightsChamber = 130000100, -- Empress' Road : Knights Chamber
+	CrossroadsOfEreve = 130000200, -- Empress' Road : Crossroads of Ereve
+-- Snow Island --
+	DangerousForest = 140010100,
+	PalaceOfTheMaster = 140010110,
+	PenguinPort = 140020300, -- Snow Island : Penguin Port
 -- Orbis --
 	Orbis = 200000000, -- Orbis : Orbis
 	OrbisStationEntrance = 200000100, -- Orbis : Orbis Station Entrance

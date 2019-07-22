@@ -1,21 +1,26 @@
-self.say("Hello, I drive the #p1022001#. If you want to go from town to town safely and fast, then ride our cab. We'll glady take you to your destination with an affordable price.")
-
-beginner = target.job % 1000 == 0
-text = "Choose your destination, for fees will change from place to place."
-if beginner then
-    text = "We have a special 90% discount for beginners." .. " " .. text
-end
+mapFields = require "lib/mapFields"
+charJob = require "lib/charJob"
 
 fields = {
-    100000000,
-    102000000,
-    101000000,
-    103000000,
-    120000000
+	mapFields.getID("Henesys"),
+	mapFields.getID("Ellinia"),
+	mapFields.getID("Perion"),
+	mapFields.getID("KerningCity"),
+	mapFields.getID("LithHarbor"),
+	mapFields.getID("Nautilus"),
 }
 
-cost = beginner and 100 or 1000;
-costStr = beginner and "100" or "1,000"
+self.say("Hello, I drive the #p1022001#. If you want to go from town to town safely and fast, then ride our cab. We'll glady take you to your destination with an affordable price.")
+
+text = "Choose your destination, for fees will change from place to place."
+if charJob.jobIsBeginner() then
+    text = "We have a special 90% discount for beginners." .. " " .. text
+	cost = charConstants.getFeeValue("begginerTaxiFee")
+else
+	cost = charConstants.getFeeValue("nonBegginerTaxiFee")
+end
+
+costStr = tostring(cost)
 selections = {}
 
 for k, v in pairs(fields) do
