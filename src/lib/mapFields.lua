@@ -72,6 +72,13 @@ local fields = {
 	Ereve = 130000000, -- Empress' Road : Ereve
 	KnightsChamber = 130000100, -- Empress' Road : Knights Chamber
 	CrossroadsOfEreve = 130000200, -- Empress' Road : Crossroads of Ereve
+	EntranceDrillHall = 130020000, -- Empress' Road : Entrance to the Drill Hall
+	ForestOfBeginning1 = 130030000, -- Empress's Road : Forest of Beginning 1
+	ForestOfBeginning2 = 130030001, -- Empress's Road : Forest of Beginning 2
+	ForestOfBeginning3 = 130030002, -- Empress's Road : Forest of Beginning 3
+	ForestOfBeginning4 = 130030003, -- Empress's Road : Forest of Beginning 4
+	ForestOfBeginning5 = 130030004, -- Empress's Road : Forest of Beginning 5
+	APathOutForestBeginning = 130030005, -- Empress's Road : A path out of the Forest of Beginning
 -- Snow Island --
 	DangerousForest = 140010100,
 	PalaceOfTheMaster = 140010110,

@@ -23,6 +23,9 @@ local quests = {
 	Infiltration = 2351, -- First Mission: Infiltration
 -- Other quests --
 	FreeMarketQuest = 7600,
+-- KoC Tutorial --
+	GreetingsFromYoungEmpress = 20000, -- Greetings From the Young Empress
+	KoCTut = 20010, -- Todo: get name
 -- Aran Tutorial --
 	MissingChild = 21000, --??
 	AranTut = 21002,
@@ -42,14 +45,28 @@ local quests = {
 	EnduranceTraining = 23105, 
 	FinalTraining Course = 23106,
 	HideAndSeek = 23999,
+-- Explorer Quest --
+	BeginnerExplorer = 29005, -- Beginner Explorer
+	TheOneWhosTouchedSky = 29904, -- The One Who's Touched the Sky
+	ElNathExplorer = 29006, -- El Nath Mts. Explorer
+	LudusLakeExplorer  = 29007, -- Ludus Lake Explorer
+	UnderseaExplorer = 29008, -- Undersea Explorer
+	MuLungExplorer = 29009, -- Mu Lung Explorer
+	NihalDesertExplorer = 29010, -- Nihal Desert Explorer
+	MinarForestExplorer = 29011, -- Minar Forest Explorer
+	SleepywoodExplorer = 29014, -- Sleepywood Explorer
+
+	BeginnerAdventurer = 29900, -- Beginner Adventurer
+	JuniorAdventurer = 29901, -- Junior Adventurer
+	VeteranAdventurer = 29902, -- Veteran Adventurer
+	MasterAdventurer = 29903, -- Master Adventurer
 }
 
 local questExpRewards = {
--- Maple Island quest rewards --
-	RogersAppleFinish = 10,
--- Edelstein quests rewards --
 	KidFound3 = 3,
 	KidFound5 = 5,
+	RogersAppleFinish = 10,
+	GreetingsFromYoungEmpressFinish = 20,
 	VitaEscapeBegin = 35,
 	VitaEscapePart3 = 60,
 	VitaEscapeFinish = 90
