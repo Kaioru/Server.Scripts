@@ -1,7 +1,9 @@
 local charConstants = {}
 
 local messosFee = { 
+	begginerTaxiFee = 100,
 	mapleToVictoria = 150,
+	nonBegginerTaxiFee = 1000,
 }
 
 local levelChecks = {

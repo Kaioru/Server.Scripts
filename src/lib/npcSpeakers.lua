@@ -16,6 +16,12 @@ local speakers = {
 	Nina = 2102,
 	Maria =	2103, 
 	Pio = 10000,
+-- Victoria Island -- 
+	AthenaPierce = 1012100, -- Athena Pierce
+	DancesWithBalrog = 1022000, -- Dances with Balrog
+	GrendelTheReallyOld	= 1032001, -- Grendel the Really Old
+	DarkLord = 1052001, -- Dark Lord
+	Kyrin = 1090000, -- Kyrin
 -- Orbis --
 	IsaStationGuide = 2012006, -- Isa the Station Guide
 -- Edelstein --
