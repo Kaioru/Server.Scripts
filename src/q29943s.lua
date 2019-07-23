@@ -1,10 +1,12 @@
---TODO: who actually says this?
 charJob = require "lib/charJob"
 charInventory = require "lib/charInventory"
-quest = target.get_quest(29943)
-speaker = self.as_speaker(2007)
+mapQuests = require "lib/mapQuests"
+npcSpeakers = require "lib/npcSpeakers"
 
-if charJob.checkIfJobBelongsToResistance() and target.level > 69 then
+quest = target.get_quest(mapQuests.getID("SpecialTrainingGraduate"))
+mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
+
+if charJob.checkIfJobBelongsToResistance() and target.level > charConstants.getLvlCheckValue("thirdJobAdv") then
 	charInventory.awardSpecialTrainingGraduateMedal()
 	quest.complete()
 	speaker.say("You have earned the <Special Training Graduate> title. You can receive a Medal from NPC Dalair.")

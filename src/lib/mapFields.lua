@@ -40,6 +40,7 @@ local fields = {
 	--KerningCityPharmacy = 103000002, -- Kerning City : Kerning City Pharmacy
 	Hideout = 103000003, -- Kerning City : Hideout
 	HallOfThieves = 103000008, -- Kerning City : Hall of Thieves
+	SubwayTicketingBooth = 103000100, -- Victoria Road : Subway Ticketing Booth
 	-- Victoria Road --
 	KerningCityBackAlley = 103050000, -- Victoria Road : Kerning City Back Alley
 	--103050100 // Victoria Road : The Secret Garden 2nd Floor
@@ -136,7 +137,10 @@ local fields = {
 	TrainingRoomC = 310010300, -- Resistance Headquarters : Training Room C
 	TrainingRoomD = 310010400, -- Resistance Headquarters : Training Room D
 	TrainingRoomE = 310010500, -- Resistance Headquarters : Training Room E
-	-- Zipangu --
+-- New Leaf City --
+	NLCSubwayStation = 600010001, -- New Leaf City : NLC Subway Station
+	WaitingRoomFromNLCtoKC = 600010002, -- New Leaf City : Waiting Room(From NLC to KC)
+-- Zipangu --
 	ShowaTown = 801000000, -- Zipangu : Showa Town
 	--801000001 // Zipangu : Hair Salon
 	--801000002 // Zipangu : Plastic Surgery

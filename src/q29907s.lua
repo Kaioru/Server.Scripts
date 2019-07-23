@@ -1,10 +1,12 @@
---TODO: who actually says this?
 charJob = require "lib/charJob"
 charInventory = require "lib/charInventory"
-quest = target.get_quest(29906)
-speaker = self.as_speaker(2007)
+mapQuests = require "lib/mapQuests"
+npcSpeakers = require "lib/npcSpeakers"
 
-if charJob.checkIfJobBelongsToKoc() and target.level > 29 then
+quest = target.get_quest(mapQuests.getID("OfficialKnight"))
+mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
+
+if charJob.checkIfJobBelongsToKoc() and target.level > charConstants.getLvlCheckValue("secondJobAdv") then
 	charInventory.awardOfficialKnightMedal()
 	quest.complete()
 	speaker.say("You have earned the <Official Knight> title. You can receive a Medal from NPC Dalair.")

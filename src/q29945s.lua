@@ -1,13 +1,12 @@
---TODO: who actually says this?
 charJob = require "lib/charJob"
 charInventory = require "lib/charInventory"
+mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
 
+quest = target.get_quest(mapQuests.getID("SpecialTrainingMaster"))
 mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
 
-quest = target.get_quest(29945)
-
-if charJob.checkIfJobBelongsToResistance() and target.level > 199 then
+if charJob.checkIfJobBelongsToResistance() and target.level > charConstants.getLvlCheckValue("fifthJob") then
 	charInventory.awardSpecialTrainingMasterMedal()
 	quest.complete()
 	mapleAdmin.say("You have earned the <Special Training Master> title. You can receive a Medal from NPC Dalair.")

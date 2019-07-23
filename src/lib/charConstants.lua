@@ -7,12 +7,14 @@ local messosFee = {
 }
 
 local levelChecks = {
+	noblesseMedal = 6,
 	mapleToVictoria = 7,
 	firstJobAdvMagician = 8,
 	firstJobAdvOther = 10,
 	secondJobAdv = 30,
 	thirdJobAdv = 70,
 	fourthJobAdv = 120,
+	fifthJob = 200,
 }
 
 function charConstants.getFeeValue(key)
