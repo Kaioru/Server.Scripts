@@ -90,6 +90,57 @@ function charInventory.removeMagicSeed()
 	inventory.remove(4031346, 1)
 end
 
+function charInventory.buyTicket(ticket, cost)
+	if target.money >= cost and inventory.has_slot_for(ticket) then
+		target.money = target.money - cost
+		inventory.add(ticket)
+	else
+		self.say("Are you sure you have #b" .. cost .. " mesos#k? If so, then I urge you to check your etc. inventory, and see if it's full or not.") -- TODO: needs to be checked
+	end
+end
+					
+function charInventory.selectTicketToVictoriaFromNLC()
+	if target.level <= 10 then
+		return 4031712 -- Subway Ticket to Kerning City (Basic)
+	else
+		return 4031713 -- Subway Ticket to Kerning City (Regular)
+	end
+end
+
+function charInventory.selectTicketToNLCFromVictoria()
+	if target.level <= 10 then
+		return 4031710 -- Subway Ticket to NLC (Basic)
+	else
+		return 4031711 -- Subway Ticket to NLC (Regular)
+	end
+end
+
+function charInventory.getPriceOfTicket(ticket)
+	if ticket == 4031712 || 4031710
+		return 1000
+	elseif ticket == 4031713 || 4031711
+		return 5000
+	else
+		return 0
+	end
+end
+
+function charInventory.hasNLCTicket()
+    ticket = target.level <= 10 and 4031712 or 4031713
+	if inventory.item_count(4031712) > 0 or inventory.item_count(4031713) > 0 then
+		return true;
+	end
+	return false;
+end
+
+function charInventory.removeNLCTicket()
+	if inventory.item_count(4031712) > 0 then
+		inventory.remove(4031712, 1) -- Subway Ticket to Kerning City (Basic)
+	else
+		inventory.remove(4031713, 1) -- Subway Ticket to Kerning City (Regular)
+	end
+end
+
 function charInventory.giveBowman1stJobItems()
 	inventory.add(1452051, 1)    -- Give beginner bow
 	inventory.add(2060000, 6000) -- Give arrrows

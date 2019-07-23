@@ -55,11 +55,23 @@ local quests = {
 	NihalDesertExplorer = 29010, -- Nihal Desert Explorer
 	MinarForestExplorer = 29011, -- Minar Forest Explorer
 	SleepywoodExplorer = 29014, -- Sleepywood Explorer
-
+-- Adventurer Trainning Quest --
 	BeginnerAdventurer = 29900, -- Beginner Adventurer
 	JuniorAdventurer = 29901, -- Junior Adventurer
 	VeteranAdventurer = 29902, -- Veteran Adventurer
 	MasterAdventurer = 29903, -- Master Adventurer
+-- KoC Trainning Quest --
+	Noblesse = 29905, -- Noblesse
+	TrainingKnight = 29906, -- Training Knight
+	OfficialKnight = 29907, -- Official Knight
+	AdvancedKnight = 29908, -- Advanced Knight
+	CaptainKnight = 29909, -- Captain Knight
+-- Special Trainning Quest
+	SpecialTrainingBeginner = 29941, -- Special Training Beginner 
+	SpecialTrainingIntermediate = 29942, -- Special Training Intermediate
+	SpecialTrainingGraduate = 29943, -- Special Training Graduate 
+	SpecialTrainingSuperior	= 29944, -- Special Training Superior
+	SpecialTrainingMaster = 29945, -- Special Training Master
 }
 
 local questExpRewards = {
