@@ -1,4 +1,4 @@
-mapFields = require("libs/mapFields")
+mapFields = require("lib/mapFields")
 
 if target.field == mapFields.getID("ExcavationSite") then
     self.say("#r<Warning>#k Danger! A force of evil is running through the Sharenian Castle!\r 1. There's a force of evil currently running through the Sharenian Castle, so don't get too close, or risk death.\r 2. Use the Returning Rock if you want to end the journey early!")

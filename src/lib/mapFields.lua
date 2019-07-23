@@ -87,23 +87,23 @@ local fields = {
 -- Orbis --
 	Orbis = 200000000, -- Orbis : Orbis
 	OrbisStationEntrance = 200000100, -- Orbis : Orbis Station Entrance
-	StationPassageway<VictoriaBound> = 200000110, -- Orbis : Station Passageway <Victoria Bound>
+	StationPassagewayVictoriaBound = 200000110, -- Orbis : Station Passageway <Victoria Bound>
 	--200000111 // Orbis : Station <Victoria Bound>
 	--200000112 // Orbis : Pre-Departure <Victoria Bound>
-	StationPathway<Ludibrium> = 200000120, -- Orbis : Station Pathway<Ludibrium>
+	StationPathwayLudibrium = 200000120, -- Orbis : Station Pathway<Ludibrium>
 	--200000121 // Orbis : Station<Ludibrium>
 	--200000122 // Orbis : Before the Departure <Ludibrium>
-	CabinPath<ToLeafre> = 200000130, -- Orbis : Cabin Path <To Leafre>
+	CabinPathToLeafre = 200000130, -- Orbis : Cabin Path <To Leafre>
 	--200000131 // Orbis : Cabin <To Leafre>
 	--200000132 // Orbis : Cabin <To Leafre>
-	CabinPath<ToMuLung> = 200000140, -- Orbis : Cabin Path <To Mu Lung>
+	CabinPathToMuLung = 200000140, -- Orbis : Cabin Path <To Mu Lung>
 	--200000141 // Orbis : Cabin <To Mu Lung>
-	StationTunnel<ToAriant> = 200000150, -- Orbis : Station Tunnel <To Ariant>
+	StationTunnelToAriant = 200000150, -- Orbis : Station Tunnel <To Ariant>
 	--200000151 // Orbis : Station <To Ariant>
 	--200000152 // Orbis : Station <To Ariant>
 	StationHall = 200000160, -- Orbis : Station Hall
 	--200000161 // Orbis : Station <To Ereve>
-	Station<EdelsteinBound> 200000170, -- Orbis : Station <Edelstein Bound>
+	StationEdelsteinBound = 200000170, -- Orbis : Station <Edelstein Bound>
 	IcyColdField = 211050000, -- El Nath : Icy Cold Field
 -- Ludibrium --
 	Ludibrium = 220000000, -- Ludibrium : Ludibrium

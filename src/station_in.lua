@@ -4,13 +4,13 @@ npcSpeakers = require "lib/npcSpeakers"
 speaker = self.as_speaker(npcSpeakers.getID("IsaStationGuide"))
 
 locations = {
-    {"Victoria Island", "Ship", mapFields.getID("StationPassageway<VictoriaBound>")},
-    {"Ludibrium", "Ship", mapFields.getID("StationPathway<Ludibrium>")},
-    {"Leafre", "Ship", mapFields.getID("CabinPath<ToLeafre>")},
-    {"Mu Lung", "Crane", mapFields.getID("CabinPath<ToMuLung>")},
-    {"Ariant", "Genie", mapFields.getID("StationTunnel<ToAriant>")},
+    {"Victoria Island", "Ship", mapFields.getID("StationPassagewayVictoriaBound")},
+    {"Ludibrium", "Ship", mapFields.getID("StationPathwayLudibrium")},
+    {"Leafre", "Ship", mapFields.getID("CabinPathToLeafre")},
+    {"Mu Lung", "Crane", mapFields.getID("CabinPathToMuLung")},
+    {"Ariant", "Genie", mapFields.getID("StationTunnelToAriant")},
     {"Ereve", "Ship", mapFields.getID("StationHall")},
-    {"Edelstein","Airship", mapFields.getID("Station<EdelsteinBound>")}
+    {"Edelstein","Airship", mapFields.getID("StationEdelsteinBound")}
 }
 selections = {}
 

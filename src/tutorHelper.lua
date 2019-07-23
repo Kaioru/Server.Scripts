@@ -1,0 +1,2 @@
+target.hire_tutor(true)
+target.tutor_message("Welcome to Maple World! I'm Mimo. I'm in charge of guiding you until you reach Lv. 10 and become a Knight-In-Training. Double-click for further information!", 200, 7000)

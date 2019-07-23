@@ -1,7 +1,7 @@
-mapFields = require "libs/mapFields"
+mapFields = require "lib/mapFields"
 mapQuests = require "lib/mapQuests"
 
-quest = target.get_quest(mapQuests.getID("KoCTut"))
+quest = target.get_quest(mapQuests.getID("WelcomeToEreve"))
 
 if target.field == mapFields.getID("ForestOfBeginning2") then
 	if quest.state == mapQuests.getState("Perform") then

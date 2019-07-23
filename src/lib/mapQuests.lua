@@ -25,13 +25,14 @@ local quests = {
 	FreeMarketQuest = 7600,
 -- KoC Tutorial --
 	GreetingsFromYoungEmpress = 20000, -- Greetings From the Young Empress
-	KoCTut = 20010, -- Todo: get name
+	WelcomeToEreve = 20010, -- Welcome To Ereve
+	KoCTut = 20022, -- hidden
 -- Aran Tutorial --
-	MissingChild = 21000, --??
-	AranTut = 21002,
+	MissingChild = 21000, -- Find the Missing Kid 1
+	AranTut = 21002, -- hidden
 -- Evan Tutorial --
 	DragonEyes = 22012,
-	EvanTut = 22013,
+	EvanTut = 22013, -- hidden
 -- Evan --
 	KiddnapingOfCamila = 22557, -- Kidnapping of Camila
 -- Edelstein Tutorial --
@@ -43,7 +44,7 @@ local quests = {
 	AgilityTraining = 23103, 
 	AttackTraining = 23104, 
 	EnduranceTraining = 23105, 
-	FinalTraining Course = 23106,
+	FinalTrainingCourse = 23106,
 	HideAndSeek = 23999,
 -- Explorer Quest --
 	BeginnerExplorer = 29005, -- Beginner Explorer
