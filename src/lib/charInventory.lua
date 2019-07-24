@@ -67,6 +67,11 @@ function charInventory.giveRogersApple()
 	end
 end
 
+function charInventory.giveKizanReward()
+	inventory.add(2000020, 3) -- Red Potion for Noblesse
+	inventory.add(2000021, 3) -- Blue Potion for Noblesse
+end
+
 function charInventory.giveRogersReward()
 	inventory.add(2000000, 3)
 	inventory.add(2010009, 3)

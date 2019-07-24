@@ -31,6 +31,7 @@ local quests = {
 -- KoC Tutorial --
 	GreetingsFromYoungEmpress = 20000, -- Greetings From the Young Empress
 	WelcomeToEreve = 20010, -- Welcome To Ereve
+	IllShowYouHowToHunt = 20011, -- I'll Show You How to Hunt
 	KoCTut = 20022, -- hidden
 -- Aran Tutorial --
 	MissingChild = 21000, -- Find the Missing Kid 1
@@ -88,6 +89,7 @@ local questExpRewards = {
 	KidFound3 = 3,
 	KidFound5 = 5,
 	RogersAppleFinish = 10,
+	WelcomeToEreveFinish = 15,
 	StrangeDreamFinish = 20,
 	GreetingsFromYoungEmpressFinish = 20,
 	VitaEscapeBegin = 35,
