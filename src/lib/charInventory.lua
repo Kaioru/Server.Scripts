@@ -57,6 +57,10 @@ function charInventory.increaseCSHslots(n)
 	inventory.set_inventory_limit(CSH, charInventory.getCSHslotCount() + n)
 end
 
+function charInventory.giveDogFood()
+	inventory.add(4032447, 1) -- Dog Food
+end
+
 function charInventory.giveRogersApple()
 	if inventory.item_count(2010007) < 1 then
 		inventory.add(2010007, 1)

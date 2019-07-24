@@ -21,6 +21,11 @@ local fields = {
 	BowmanInstructionalSchool = 100000201, -- Henesys : Bowman Instructional School
 	HallOfBowmen = 100000204, -- Henesys : Hall of Bowmen
 	GolemsTempleEntrance = 100040000, -- Golem's Temple : Golem's Temple Entrance
+	-- Utah's House --
+	SmallAttic = 100030100, -- Utah's House : Small Attic
+	LivingRoom = 100030101, -- Utah's House : Living Room
+	FrontYard = 100030102, -- Utah's House : Front Yard
+	BackYard = 100030103, -- Utah's House : Back Yard
 	-- Ellinia --
 	Ellinia = 101000000, -- Ellinia : Ellinia
 	-- ElliniaWeaponStore = 101000001, -- Ellinia : Ellinia Weapon Store
