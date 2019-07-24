@@ -22,3 +22,22 @@ target.reserved_effect(mapEffects.getReservedEffect("trio"))
 		--athena.get_speech("The other heroes... They've already left to fight the Black Mage. They're slowing the Black Mage down so the rest of us can escape. They didn't want to take you with them because you were injured. Escape with us, Aran, as soon as we rescue the child!")
 	--})
 --end
+
+--[[ TODO: quest record
+	if athena.ask_yes_no("You made it back safely! What about the child?! Did you bring the child with you?!") then
+		athena.say("Oh, what a relief. I'm so glad...")
+		target.say("Hurry and board the ship! We don't have much time!")
+		athena.say("We don't have any time to waste. The Black Mage's forces are getting closer and closer! We're doomed if we don't leave right right this moment!")
+		target.say("Leave, now!")
+		athena.say("Aran, please! I know you want to stay and fight the Black Mage, but it's too late! Leave it to the others and come to Victoria Island with us!")
+		target.say("No, I can't!")
+		target.say("Athena Pierce, why don't you leave for Victoria Island first? I promise I'll come for you later. I'll be alright. I must fight the Black Mage with the other heroes!")
+
+		 charInventory.removeLostChild()
+		-- qm.removeEquipFromSlot(-11);
+		quest.complete()
+		target.transfer_field(mapFields.getID("AranScene"), 0)
+	else
+		athena.say("What about the child? Please give me the child!")
+	end 
+]]--

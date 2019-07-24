@@ -5,7 +5,7 @@ mapEffects = require "lib/mapEffects"
 quest = target.get_quest(mapQuests.getID("AranTut2"))
 lilin = self.as_speaker(npcSpeakers.getID("Lilin")
 
-if quest.record_key("helper") == "" then
+if quest.record_ex_key("helper") == "" then
 	self.say ({
 		lilin.say("You've finally awoken...!"),
 		target.say("And you are...?"),
@@ -15,7 +15,7 @@ if quest.record_key("helper") == "" then
 	})
 	target.reserved_effect(mapEffects.getReservedEffect("face"))
 	target.reserved_effect(mapEffects.getReservedEffect("clickLilin"))
-	quest.update("helper", "clear") -- cm.updateAreaInfo(21019, "helper=clear");
+	quest.update_ex("helper", "clear") -- cm.updateAreaInfo(21019, "helper=clear");
 else
 	self.say ({
 		lilin.say("Are you alright?"),

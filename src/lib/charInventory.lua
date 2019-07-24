@@ -78,9 +78,9 @@ end
 
 function charInventory.hasRecommendationLetter()
 	if inventory.item_count(4031801) > 0 then -- Lucas's Recommendation Letter
-		return true;
+		return true
 	end
-	return false;
+	return false
 end
 
 function charInventory.removeRecommendationLetter()
@@ -89,9 +89,9 @@ end
 
 function charInventory.hasMagicSeed()
 	if inventory.item_count(4031346) > 0 then -- Magic Seed
-		return true;
+		return true
 	end
-	return false;
+	return false
 end
 
 function charInventory.removeMagicSeed()
@@ -124,9 +124,9 @@ function charInventory.selectTicketToNLCFromVictoria()
 end
 
 function charInventory.getPriceOfTicket(ticket)
-	if ticket == 4031712 || 4031710
+	if ticket == 4031712 or 4031710 then
 		return 1000
-	elseif ticket == 4031713 || 4031711
+	elseif ticket == 4031713 or 4031711 then
 		return 5000
 	else
 		return 0
@@ -136,9 +136,9 @@ end
 function charInventory.hasNLCTicket()
     ticket = target.level <= 10 and 4031712 or 4031713
 	if inventory.item_count(4031712) > 0 or inventory.item_count(4031713) > 0 then
-		return true;
+		return true
 	end
-	return false;
+	return false
 end
 
 function charInventory.removeNLCTicket()
