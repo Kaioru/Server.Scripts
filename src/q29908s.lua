@@ -4,7 +4,7 @@ mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
 
 quest = target.get_quest(mapQuests.getID("AdvancedKnight"))
-mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
+mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdmin"))
 
 if charJob.checkIfJobBelongsToKoc() and target.level > charConstants.getLvlCheckValue("thirdJobAdv") then
 	charInventory.awardAdvancedKnightMedal()

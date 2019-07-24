@@ -4,7 +4,7 @@ mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
 
 quest = target.get_quest(mapQuests.getID("VeteranAdventurer"))
-mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
+mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdmin"))
 
 if charJob.checkIfJobBelongsToExplorers() and target.level > charConstants.getLvlCheckValue("thirdJobAdv") then
 	charInventory.awardVeteranAdventurerMedal()
