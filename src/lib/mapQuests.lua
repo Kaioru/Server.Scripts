@@ -8,6 +8,11 @@ local states = {
 	No = 0x4
 }
 
+local questIcons = {
+	questIcon4 = "UI/UIWindow.img/QuestIcon/4/0"
+	questIcon8 = "UI/UIWindow.img/QuestIcon/8/0"
+}
+
 local quests = { 
 -- Adventurer Tutorial --
 	Reactor1 = 1008,
