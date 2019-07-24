@@ -1,7 +1,8 @@
 mapFields = require "lib/mapFields"
+mapEffects = require "lib/mapEffects"
 
 if target.field == mapFields.getID("Teaser1") then
-	target.direction_mode = true
+	-- target.direction_mode = true
 	target.reserved_effect(mapEffects.getReservedEffect("promotionScene0") .. target.gender)
 elseif target.field == mapFields.getID("Teaser2") then
     target.reserved_effect(mapEffects.getReservedEffect("promotionScene1"))

@@ -9,8 +9,8 @@ local states = {
 }
 
 local questIcons = {
-	questIcon4 = "UI/UIWindow.img/QuestIcon/4/0"
-	questIcon8 = "UI/UIWindow.img/QuestIcon/8/0"
+	questIcon4 = "UI/UIWindow.img/QuestIcon/4/0",
+	questIcon8 = "UI/UIWindow.img/QuestIcon/8/0",
 }
 
 local quests = { 
@@ -41,6 +41,7 @@ local quests = {
 	DragonEyes = 22012,
 	EvanTut = 22013, -- hidden
 -- Evan --
+	StrangeDream = 22000, -- Strange Dream
 	KiddnapingOfCamila = 22557, -- Kidnapping of Camila
 -- Edelstein Tutorial --
 	VitaEscape = 23007,
