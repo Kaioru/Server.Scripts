@@ -1,5 +1,6 @@
 mapFields = require "lib/mapFields"
 mapQuests = require "lib/mapQuests"
+npcSpeakers = require "lib/npcSpeakers"
 
 quest = target.get_quest(mapQuests.getID("MissingChild"))
 mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
@@ -10,7 +11,6 @@ if quest.state == mapQuests.getState("Perform") then
 	--pi.teachSkill(20000018, 0, -1, -1);
 	--pi.teachSkill(20000017, 1, 0, -1);
 	--pi.teachSkill(20000018, 1, 0, -1);
-
 	target.play_portal_sound_effect()
 	target.transfer_field(mapFields.getID("BurningForest1"), 1)
 else
