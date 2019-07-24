@@ -4,6 +4,8 @@ charConstants = require "lib/charConstants"
 charJob = require "lib/charJob"
 mapQuests = require "lib/mapQuests"
 
+quest = target.get_quest(mapQuests.getID("Infiltration"))
+
 if charJob.jobIsBeginner() then
 	self.say("Want to be a thief? There are some standards to meet, because we can't just accept EVERYONE in ... #bYour level should be at least 10#k. Let's see...")
 	if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") then
@@ -16,8 +18,7 @@ if charJob.jobIsBeginner() then
 		charInventory.increaseETCslots(1)
 
 		-- TODO: this is a temporary fix until quest data are properly handled	
-		quest = target.get_quest(mapQuests.getID("Infiltration"))
-		if quest.state != mapQuests.getState("None") then 
+		if quest.state == mapQuests.getState("Perform") then 
 			quest.complete()
 		end
 
