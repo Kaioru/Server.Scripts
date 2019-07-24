@@ -27,6 +27,12 @@ local speakers = {
 	Kyrin = 1090000, -- Kyrin
 -- Ereve --
 	Cygnus = 1101000, -- Cygnus
+	Kimu = 1102004, -- Kimu
+	Kizan = 1102005, -- Kizan
+	Kinu = 1102006, -- Kinu
+	Kia = 1102007, -- Kia
+	Kisha = 1102008, -- Kisha
+	Neinheart = 1102009, -- Neinheart
 -- Aran --
 	Lilin = 1202000, -- Lilin
 	AthenaPierceAranTut = 1209000, -- Athena Pierce
