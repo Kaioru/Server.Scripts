@@ -164,6 +164,12 @@ local fields = {
 	BurningForest2second = 914000410, -- Black Road : Burning Forest 2
 	BurningForest1second = 914000420, -- Black Road : Burning Forest 1
 	ReadyToLeave2 = 914000500, -- Black Road : Ready to Leave
+
+	AranScene = 914090010, -- :
+	AranScene1 = 914090011, --
+	AranScene2 = 914090012, --
+	AranScene3 = 914090013, --
+	AranHandedPoleArmScene = 914090100, --
 -- Edelstein Tutorial --
 	NeglectedRockyMountain1 = 931000000, -- Dangerous Hide-and-Seek : Neglected Rocky Mountain
 	NeglectedRockyMountain2 = 931000001, -- Dangerous Hide-and-Seek : Neglected Rocky Mountain

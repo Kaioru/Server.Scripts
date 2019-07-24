@@ -2,10 +2,17 @@ mapFields = require "lib/mapFields"
 mapQuests = require "lib/mapQuests"
 
 quest = target.get_quest(mapQuests.getID("MissingChild"))
-speaker = self.as_speaker(0x1)
+mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
 
-if quest.state == 0x1 then
+if quest.state == mapQuests.getState("Perform") then
+	-- TODO: add skills, enable actions
+	--pi.teachSkill(20000017, 0, -1, -1);
+	--pi.teachSkill(20000018, 0, -1, -1);
+	--pi.teachSkill(20000017, 1, 0, -1);
+	--pi.teachSkill(20000018, 1, 0, -1);
+
 	target.play_portal_sound_effect()
 	target.transfer_field(mapFields.getID("BurningForest1"), 1)
 else
-    speaker.say("You can only exit after you accept the quest from Athena Pierce, who is to your right.")
+    mapleAdmin.say("You can only exit after you accept the quest from Athena Pierce, who is to your right.")
+end
