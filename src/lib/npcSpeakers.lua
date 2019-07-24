@@ -18,7 +18,9 @@ local speakers = {
 	Pio = 10000,
 -- Victoria Island -- 
 	AthenaPierce = 1012100, -- Athena Pierce
+	Utah = 1012107, -- Utah 
 	Dragon =  1013001, -- Dragon
+	Anna = 1013100, -- Anna
 	DancesWithBalrog = 1022000, -- Dances with Balrog
 	GrendelTheReallyOld	= 1032001, -- Grendel the Really Old
 	DarkLord = 1052001, -- Dark Lord

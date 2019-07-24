@@ -38,10 +38,11 @@ local quests = {
 	AranTut = 21002, -- hidden
 	AranTut2 = 21019, -- hidden
 -- Evan Tutorial --
+	StrangeDream = 22000, -- Strange Dream
+	FeedingBullDog = 22001, -- Feeding Bull Dog
 	DragonEyes = 22012,
 	EvanTut = 22013, -- hidden
 -- Evan --
-	StrangeDream = 22000, -- Strange Dream
 	KiddnapingOfCamila = 22557, -- Kidnapping of Camila
 -- Edelstein Tutorial --
 	VitaEscape = 23007,
@@ -87,6 +88,7 @@ local questExpRewards = {
 	KidFound3 = 3,
 	KidFound5 = 5,
 	RogersAppleFinish = 10,
+	StrangeDreamFinish = 20,
 	GreetingsFromYoungEmpressFinish = 20,
 	VitaEscapeBegin = 35,
 	VitaEscapePart3 = 60,

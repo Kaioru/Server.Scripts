@@ -1,6 +1,6 @@
 mapQuests = require "lib/mapQuests"
-mapFields = require "lib/mapFields"
-charInventory = require "lib/charInventory"
+mapEffects = require "lib/mapEffects"
+npcSpeakers = require "lib/npcSpeakers"
 
 quest = target.get_quest(mapQuests.getID("StrangeDream"))	
 anna = self.as_speaker(npcSpeakers.getID("Anna"))
@@ -23,11 +23,3 @@ else
 end
 
 target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("evan1"))
-
-if quest == mapQuests.getState("Perform") then
-	anna.say("Hey, Evan. You up? What's with the dark circles under your eyes? Didn't sleep well? Huh? A strange dream? What was it about? Whoa? A dream about a dragon?")
-	anna.say("Muahahahahaha, a dragon? Are you serious? I don't know how to interpret dreams, but that sounds like a good one! Did you see a dog in your dream, too? Hahaha! \r\n\r\n#fUI/UIWindow.img/QuestIcon/8/0# 20 exp")
-	quest.complete()
-	target.exp = target.exp + 20
-	target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("evan2"))
-end
