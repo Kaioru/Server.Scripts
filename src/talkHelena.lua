@@ -4,6 +4,7 @@ npcSpeakers = require "lib/npcSpeakers"
 
 athena = self.as_speaker(npcSpeakers.getID("AthenaPierceAranTut"))
 quest = target.get_quest(mapQuests.getID("AranTut"))
+quest1 = target.get_quest(mapQuests.getID("MissingChild2"))
 
 self.say ({
 	athena.get_speech("Aran, you're awake! How are you feeling? Hm? You want to know what's been going on?"),
@@ -23,7 +24,7 @@ target.reserved_effect(mapEffects.getReservedEffect("trio"))
 	--})
 --end
 
---[[ TODO: quest record
+if quest1 == mapQuests.getState("Perform") then
 	if athena.ask_yes_no("You made it back safely! What about the child?! Did you bring the child with you?!") then
 		athena.say("Oh, what a relief. I'm so glad...")
 		target.say("Hurry and board the ship! We don't have much time!")
@@ -36,8 +37,9 @@ target.reserved_effect(mapEffects.getReservedEffect("trio"))
 		 charInventory.removeLostChild()
 		-- qm.removeEquipFromSlot(-11);
 		quest.complete()
+		quest1.complete()
 		target.transfer_field(mapFields.getID("AranScene"), 0)
 	else
 		athena.say("What about the child? Please give me the child!")
 	end 
-]]--
+end
