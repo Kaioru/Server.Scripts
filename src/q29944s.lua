@@ -4,7 +4,7 @@ mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
 
 quest = target.get_quest(mapQuests.getID("SpecialTrainingSuperior"))
-mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
+mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdmin"))
 
 if charJob.checkIfJobBelongsToResistance() and target.level > charConstants.getLvlCheckValue("fourthJobAdv") then
 	charInventory.awardSpecialTrainingSuperiorMedal()

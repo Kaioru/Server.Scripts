@@ -3,7 +3,7 @@ mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
 
 quest = target.get_quest(mapQuests.getID("MissingChild"))
-mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdministrator"))
+mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdmin"))
 
 if quest.state == mapQuests.getState("Perform") then
 	-- TODO: add skills, enable actions

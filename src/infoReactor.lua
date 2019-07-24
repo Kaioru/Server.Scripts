@@ -2,8 +2,8 @@
 mapQuests = require("lib/mapQuests")
 mapEffects = require("lib/mapEffects")
 
-quest1 = target.get_quest(mapQuests.getID("reactor1"))
-quest2 = target.get_quest(mapQuests.getID("reactor2"))
+quest1 = target.get_quest(mapQuests.getID("Reactor1"))
+quest2 = target.get_quest(mapQuests.getID("Reactor2"))
 
 if quest1.state == mapQuests.getState("Complete") then
     target.avatar_oriented_effect(mapEffects.getAvatarOrientedEffect("infoReactor1"))
