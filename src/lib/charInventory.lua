@@ -68,6 +68,14 @@ function charInventory.giveRogersReward()
 	inventory.add(2010009, 3)
 end
 
+function charInventory.giveLostChild()
+	inventory.add(4001271, 1) -- Lost Child 
+end
+
+function charInventory.removeLostChild()
+	inventory.remove(4001271, 1) -- Lost Child 
+end
+
 function charInventory.hasRecommendationLetter()
 	if inventory.item_count(4031801) > 0 then -- Lucas's Recommendation Letter
 		return true;

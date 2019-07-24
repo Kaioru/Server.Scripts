@@ -19,9 +19,9 @@ local avatarOrientedEffects = {
 	legendBalloon3 = "Effect/OnUserEff.img/guideEffect/aranTutorial/legendBalloon3",
 	legendBalloon4 = "Effect/OnUserEff.img/guideEffect/aranTutorial/legendBalloon4", --unused yet
 	legendBalloon5 = "Effect/OnUserEff.img/guideEffect/aranTutorial/legendBalloon5", --unused yet
-	legendBalloon6 = "Effect/OnUserEff.img/guideEffect/aranTutorial/legendBalloon6"
+	legendBalloon6 = "Effect/OnUserEff.img/guideEffect/aranTutorial/legendBalloon6",
 	-- Aran tut arrows --
-	tutorialArrow1 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialArrow1", --unused yet
+	tutorialArrow1 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialArrow1",
 	tutorialArrow2 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialArrow2", --unused yet
 	tutorialArrow3 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialArrow3",
 	-- Aran tut guides --
@@ -97,6 +97,11 @@ local reservedEffects = {
 	clickPoleArm = "Effect/Direction1.img/aranTutorial/ClickPoleArm",
 	face = "Effect/Direction1.img/aranTutorial/face",
 	trio = "Effect/Direction1.img/aranTutorial/Trio",
+	scene0 = "Effect/Direction1.img/aranTutorial/Scene0",
+	scene1 = "Effect/Direction1.img/aranTutorial/Scene1",
+	scene2 = "Effect/Direction1.img/aranTutorial/Scene2",
+	scene3 = "Effect/Direction1.img/aranTutorial/Scene3",
+	handedPoleArm = "Effect/Direction1.img/aranTutorial/HandedPoleArm",
 -- Resistance Tut --
 	talkJ = "Effect/Direction4.img/Resistance/TalkJ",	
 	clickVel = "Effect/Direction4.img/Resistance/ClickVel",

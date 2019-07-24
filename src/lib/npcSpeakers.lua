@@ -24,6 +24,8 @@ local speakers = {
 	Kyrin = 1090000, -- Kyrin
 -- Ereve --
 	Cygnus = 1101000, -- Cygnus
+-- Aran --
+	AthenaPierceAranTut = 1209000, -- Athena Pierce
 -- Orbis --
 	IsaStationGuide = 2012006, -- Isa the Station Guide
 -- Edelstein --
