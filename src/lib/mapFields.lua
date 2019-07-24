@@ -84,6 +84,7 @@ local fields = {
 	DangerousForest = 140010100,
 	PalaceOfTheMaster = 140010110,
 	PenguinPort = 140020300, -- Snow Island : Penguin Port
+	ColdForest1 = 140090100, -- Snow Island : Cold Forest 1
 -- Orbis --
 	Orbis = 200000000, -- Orbis : Orbis
 	OrbisStationEntrance = 200000100, -- Orbis : Orbis Station Entrance

@@ -31,6 +31,7 @@ local quests = {
 	MissingChild = 21000, -- Find the Missing Kid 1
 	MissingChild2 = 21001, -- Find the Missing Kid 2
 	AranTut = 21002, -- hidden
+	AranTut2 = 21019, -- hidden
 -- Evan Tutorial --
 	DragonEyes = 22012,
 	EvanTut = 22013, -- hidden
