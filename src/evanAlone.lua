@@ -1,1 +1,2 @@
-target.direction_mode = false
+-- TODO: fix this
+-- c.getSession().write(MaplePacketCreator.enableActions());
