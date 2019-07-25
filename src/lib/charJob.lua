@@ -29,7 +29,7 @@ local hunters = {hunter = 310, ranger = 311, bowMaster = 312}
 local crossbowmans = {crossbowman = 320, sniper = 321, marksman = 322}
 local bowmans = {hunters, crossbowmans}
 
-local thief = 300
+local thief = 400
 local assasins = {assasin = 410, hermit = 411, nighLord = 412}
 local bandits = {bandit = 420, chiefBandit = 421, shadower = 422}
 local thieves = {assasins, bandits}
@@ -116,6 +116,7 @@ function charJob.jobIsBeginner()
 		return true
 	else
 		return false
+	end
 end
 
 -- Char Job Advencement --
