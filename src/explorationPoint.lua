@@ -20,5 +20,6 @@ elseif target.field >= mapFields.getID("Leafre") and target.field <= mapFields.g
 end
 
 if target.field == mapFields.getID("LithHarbor") then
+	target.direction_mode = false
 	target.screen_field_effect(mapEffects.getScreenFieldEffect("enter104000000"))
 end

@@ -16,6 +16,7 @@ local speakers = {
 	Nina = 2102,
 	Maria =	2103, 
 	Pio = 10000,
+	Mai = 12100,
 -- Victoria Island -- 
 	AthenaPierce = 1012100, -- Athena Pierce
 	Utah = 1012107, -- Utah 
@@ -23,6 +24,7 @@ local speakers = {
 	Anna = 1013100, -- Anna
 	DancesWithBalrog = 1022000, -- Dances with Balrog
 	GrendelTheReallyOld	= 1032001, -- Grendel the Really Old
+	PowerBFore = 1032114, -- Power B.Fore
 	DarkLord = 1052001, -- Dark Lord
 	Kyrin = 1090000, -- Kyrin
 -- Ereve --

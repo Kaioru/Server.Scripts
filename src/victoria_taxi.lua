@@ -1,5 +1,6 @@
 mapFields = require "lib/mapFields"
 charJob = require "lib/charJob"
+charConstants = require "lib/charConstants"
 
 fields = {
 	mapFields.getID("Henesys"),
@@ -7,7 +8,7 @@ fields = {
 	mapFields.getID("Perion"),
 	mapFields.getID("KerningCity"),
 	mapFields.getID("LithHarbor"),
-	mapFields.getID("Nautilus"),
+	mapFields.getID("NautilusHarbor"),
 }
 
 self.say("Hello, I drive the #p1022001#. If you want to go from town to town safely and fast, then ride our cab. We'll glady take you to your destination with an affordable price.")
