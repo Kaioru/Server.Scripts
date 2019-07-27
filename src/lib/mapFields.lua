@@ -159,6 +159,20 @@ local fields = {
 	--801020000 // Zipangu : Showa Street 2
 	--801030000 // Zipangu : Showa Street 3
 	NearTheHideout = 801040000, -- Zipangu : Near the Hideout
+-- Evan Tutorial --
+	Teaser1 = 900090000, -- Video : Teaser
+	Teaser2 = 900090001, -- Video : Teaser
+	Teaser3 = 900090002, -- Video : Teaser
+	Teaser4 = 900090003, -- Video : Teaser
+	Teaser5 = 900090004, -- Video : Teaser
+	Tutorial = 900090100, -- Video : Tutorial 0
+	Tutorial1 = 900090101, -- Video : Tutorial 1
+	Tutorial2 = 900090102, -- Video : Tutorial 2
+	JobAdvancement = 900090103, -- Video : Job Advancement
+-- Free Market --
+	FreeMarketEtrance = 910000000, -- Hidden Street : Free Market Entrance
+	FreeMarket1 = 910000001, -- Hidden Street : Free Market<1>
+	MagicianTrainingCenter = 910120000, -- Victoria Road : Magician Training Center
 -- Aran Tutorial --
 	WoundedSoldiersCamp	= 914000000, -- Black Road : Wounded Soldier's Camp
 	ReadyToLeave = 914000100, -- Black Road : Ready to Leave
@@ -170,7 +184,6 @@ local fields = {
 	BurningForest2second = 914000410, -- Black Road : Burning Forest 2
 	BurningForest1second = 914000420, -- Black Road : Burning Forest 1
 	ReadyToLeave2 = 914000500, -- Black Road : Ready to Leave
-
 	AranScene = 914090010, -- :
 	AranScene1 = 914090011, --
 	AranScene2 = 914090012, --
@@ -186,19 +199,6 @@ local fields = {
 	NeglectedRockyMountain3 = 931000020, -- Dangerous Hide-and-Seek : Neglected Rocky Mountain
 	NeglectedRockyMountain4 = 931000021, -- Dangerous Hide-and-Seek : Neglected Rocky Mountain
 	BehindTheMine = 931000030, -- Dangerous Hide-and-Seek : Behind the Mine
--- Evan Tutorial --
-	Teaser1 = 900090000, -- Video : Teaser
-	Teaser2 = 900090001, -- Video : Teaser
-	Teaser3 = 900090002, -- Video : Teaser
-	Teaser4 = 900090003, -- Video : Teaser
-	Teaser5 = 900090004, -- Video : Teaser
-	Tutorial = 900090100, -- Video : Tutorial 0
-	Tutorial1 = 900090101, -- Video : Tutorial 1
-	Tutorial2 = 900090102, -- Video : Tutorial 2
-	JobAdvancement = 900090103, -- Video : Job Advancement
--- Free Market --
-	FreeMarketEtrance = 910000000, -- Hidden Street : Free Market Entrance
-	FreeMarket1 = 910000001, -- Hidden Street : Free Market<1>
 -- Guild Quest --
 	ExcavationSite = 990000000, --  Sharenian : Excavation Site
 }
