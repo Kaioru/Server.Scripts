@@ -133,7 +133,7 @@ function charJob.belongsTo(jobtype)
 			return false
 		end
 	elseif jobtype == "resistance" then
-		if table.contains(jobsResistance, job) then
+		if table.contains(resistance, job) then
 			return true
 		else 
 			return false
@@ -145,19 +145,19 @@ function charJob.belongsTo(jobtype)
 			return false
 		end
 	elseif jobtype == "knightsOfCygnus" then
-		if table.contains(jobsKnightsOfCygnus, job) then
+		if table.contains(knightsOfCygnus, job) then
 			return true
 		else 
 			return false
 		end
 	elseif jobtype == "legends" then 
-		if table.contains(jobsLegends, job) then
+		if table.contains(legends, job) then
 			return true
 		else 
 			return false
 		end
 	elseif jobtype == "dualBlades" then
-		if table.contains(jobsDualBlades, job) then
+		if table.contains(dualBlades, job) then
 			return true
 		else 
 			return false
