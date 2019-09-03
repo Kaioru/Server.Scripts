@@ -173,6 +173,9 @@ local fields = {
 	FreeMarketEtrance = 910000000, -- Hidden Street : Free Market Entrance
 	FreeMarket1 = 910000001, -- Hidden Street : Free Market<1>
 	MagicianTrainingCenter = 910120000, -- Victoria Road : Magician Training Center
+	WarriorTrainingCenter = 910220000, -- Victoria Road : Warrior Training Center
+	ThiefTrainingCenter = 910310000, -- Victoria Road : Thief Training Center
+	BowmanTrainingCenter = 910060000, -- Victoria Road : Bowman Training Center
 -- Aran Tutorial --
 	WoundedSoldiersCamp	= 914000000, -- Black Road : Wounded Soldier's Camp
 	ReadyToLeave = 914000100, -- Black Road : Ready to Leave

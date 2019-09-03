@@ -2,11 +2,12 @@ charJob = require "lib/charJob"
 charInventory = require "lib/charInventory"
 mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
+charConstants = require "lib/charConstants"
 
 quest = target.get_quest(mapQuests.getID("BeginnerAdventurer"))
 mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdmin"))
 
-if charJob.checkIfJobBelongsToExplorers() and target.level > charConstants.getLvlCheckValue("firstJobAdvMagician") then
+if charJob.belongsTo("explorers") and target.level >= charConstants.getLvlCheckValue("firstJobAdvMagician") then
 	charInventory.awardBeginnerAdventurerMedal()
 	quest.complete()
 	mapleAdmin.say("You have earned the <Beginner Adventurer> title. You can receive a Medal from NPC Dalair.")

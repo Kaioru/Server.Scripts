@@ -9,7 +9,7 @@ grendelTheReallyOld = self.as_speaker(npcSpeakers.getID("GrendelTheReallyOld"))
 darkLord = self.as_speaker(npcSpeakers.getID("DarkLord"))
 kyrin = self.as_speaker(npcSpeakers.getID("Kyrin"))
 
-if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") and charJob.jobIsBeginner() then
+if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") and charJob.belongsTo("begginer") then
 	if target.field == mapFields.getID("NavigationRoom") then
 		target.converse("kairinT", kyrin, target)
 	elseif target.field == mapFields.getID("WarriorsSanctuary") then
