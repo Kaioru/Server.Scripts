@@ -25,7 +25,7 @@ local avatarOrientedEffects = {
 	tutorialArrow2 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialArrow2", --unused yet
 	tutorialArrow3 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialArrow3",
 	-- Aran tut guides --
-	tutorialGuide1 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialGuide1",
+	tutorialGuide1 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialGuide1", --unused yet
 	tutorialGuide2 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialGuide2", --unused yet
 	tutorialGuide3 = "Effect/OnUserEff.img/guideEffect/aranTutorial/tutorialGuide3", --unused yet
 -- Evan Tutorial --
