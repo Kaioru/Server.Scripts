@@ -297,7 +297,7 @@ function charInventory.awardSpecialTrainingBeginnerMedal()
 	end
 end
 
-function charInventory.awardSpecialTrainingIntermediateyMedal()
+function charInventory.awardSpecialTrainingIntermediateMedal()
 	if inventory.item_count(1142243) < 1 then
 		inventory.add(1142243, 1) --  <Special Training Intermediate> 
 	end
