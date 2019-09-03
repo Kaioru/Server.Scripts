@@ -3,13 +3,13 @@ charInventory = require "lib/charInventory"
 charConstants = require "lib/charConstants"
 charJob = require "lib/charJob"
 
-if charJob.jobIsBeginner() then
+if charJob.belongsTo("beginner") then
 	self.say("So you want to become the Bowman??? Well...you need to meet some requirements to do so...at least #bLevel10#k. Let's see...hmm...")
 	if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") then
 		self.say("You look qualified for this. With a great pair of eyes being able to spot the real monsters and have the coldhearted skills to shoot the arrow through them...we needed someone like that. Do you want to become a Bowman?")
 		self.say("Alright! You are the Bowman from here on out, because I said so...haha here's a little bit of my power to you...Haahhhh!")
 
-		charJob.setStatsBowman1stJob()
+		charJob.setAdvStats("bowman")
 		charInventory.giveBowman1stJobItems()
 		charInventory.increaseEQPslots(1)
 		charInventory.increaseUSEslots(1)

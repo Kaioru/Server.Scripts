@@ -6,13 +6,13 @@ mapQuests = require "lib/mapQuests"
 
 quest = target.get_quest(mapQuests.getID("Infiltration"))
 
-if charJob.jobIsBeginner() then
+if charJob.belongsTo("beginner") then
 	self.say("Want to be a thief? There are some standards to meet, because we can't just accept EVERYONE in ... #bYour level should be at least 10#k. Let's see...")
 	if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") then
 		self.say("Oh...! You look like someone that can definitely be a part of us...all you need is a little sinister mind, and...yeah...so, what do you think? Wanna be the Rouge?")
 		self.say("Alright, from here on out, you are part of us! You'll be living the life of a wanderer at first, but just be patient and soon, you'll be living the high life. Alright, it ain't much, but I'll give you some of my abilities...HAAAHHH!!")
 		
-		charJob.setStatsThief1stJob()
+		charJob.setAdvStats("thief")
 		charInventory.giveRogue1stJobItems()
 		charInventory.increaseEQPslots(1)
 		charInventory.increaseETCslots(1)

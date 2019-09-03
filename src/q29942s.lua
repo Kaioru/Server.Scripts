@@ -2,11 +2,12 @@ charJob = require "lib/charJob"
 charInventory = require "lib/charInventory"
 mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
+charConstants = require "lib/charConstants"
 
 quest = target.get_quest(mapQuests.getID("SpecialTrainingIntermediate"))
 mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdmin"))
 
-if charJob.checkIfJobBelongsToResistance() and target.level > charConstants.getLvlCheckValue("secondJobAdv") then
+if charJob.belongsTo("resistance") and target.level >= charConstants.getLvlCheckValue("secondJobAdv") then
 	charInventory.awardSpecialTrainingIntermediateMedal()
 	quest.complete()
 	speaker.say("You have earned the <Special Training Intermediate> title. You can receive a Medal from NPC Dalair.")

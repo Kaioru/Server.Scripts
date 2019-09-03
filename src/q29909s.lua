@@ -2,11 +2,12 @@ charJob = require "lib/charJob"
 charInventory = require "lib/charInventory"
 mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
+charConstants = require "lib/charConstants"
 
 quest = target.get_quest(mapQuests.getID("CaptainKnight"))
 mapleAdmin = self.as_speaker(npcSpeakers.getID("MapleAdmin"))
 
-if charJob.checkIfJobBelongsToKoc() and target.level > charConstants.getLvlCheckValue("fourthJobAdv") then
+if charJob.belongsTo("knightsOfCygnus") and target.level >= charConstants.getLvlCheckValue("fourthJobAdv") then
 	charInventory.awardCaptainKnightMedal()
 	quest.complete()
 	speaker.say("You have earned the <Captain Knight> title. You can receive a Medal from NPC Dalair.")

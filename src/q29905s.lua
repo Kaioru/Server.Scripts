@@ -3,11 +3,12 @@ charJob = require "lib/charJob"
 charInventory = require "lib/charInventory"
 mapQuests = require "lib/mapQuests"
 npcSpeakers = require "lib/npcSpeakers"
+charConstants = require "lib/charConstants"
 
 cygnus = self.as_speaker(npcSpeakers.getID("Cygnus"))
 quest = target.get_quest(mapQuests.getID("Noblesse"))  -- 4th Quest - 20015 Greetings from the Young Empress and Chain...
 
-if charJob.checkIfJobBelongsToKoc() and target.level > charConstants.getLvlCheckValue("noblesseMedal") then
+if charJob.belongsTo("knightsOfCygnus") and target.level >= charConstants.getLvlCheckValue("noblesseMedal") then
 	charInventory.awardNoblesseMedal()
 	quest.complete()
 	cygnus.say("You have earned the <Noblesse> title. You can receive a Medal from NPC Dalair.")

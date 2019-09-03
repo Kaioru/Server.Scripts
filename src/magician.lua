@@ -3,13 +3,13 @@ charInventory = require "lib/charInventory"
 charConstants = require "lib/charConstants"
 charJob = require "lib/charJob"
 
-if charJob.jobIsBeginner() then
+if charJob.belongsTo("beginner") then
 	self.say("Do you want to be a Magician? You need to meet some requirements in order to do so. You need to be at least at #bLevel 8#k. Let's see if you have what it takes to become a Magician...")
 	if target.level >= charConstants.getLvlCheckValue("firstJobAdvMagician") then
 		self.say("You definitely have the look of a Magician. You may not be there yet, but I can see the Magician in you...what do you think? Do you want to become the Magician?")
 		self.say("Alright, you're a Magician from here on out, since I, Grendel the Really old, the head Magician, allow you so. It isn't much, but I'll give you a little bit of what I have...")
 
-		charJob.setStatsMagician1stJob()
+		charJob.setAdvStats("magician")
 		charInventory.giveMagician1stJobItems()
 		
 		self.say("You have just equipped yourself with much more magicial power. Please keep training and make yourself much better...I'll be watching you from here and there...")

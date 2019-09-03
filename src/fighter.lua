@@ -3,13 +3,13 @@ charInventory = require "lib/charInventory"
 charConstants = require "lib/charConstants"
 charJob = require "lib/charJob"
 
-if charJob.jobIsBeginner() then
+if charJob.belongsTo("beginner") then
 	self.say("Do you wish to be a Warrior? You need to meet some criteria in order to do so. #bYou need to be at least in Level 10#k. Let's see...")
 	if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") then
 		self.say("You definitely have the look of a Warrior. You may not be there just yet, but I can see the Warrior in you. What do you think? Do you want to become a Warrior?")
 		self.say("From here on out, you are going to be the Warrior! Please continue working hard...I'll enhance your abilities a bit with the hope of you training yourself to be even stronger than you're now. Haaaaaap!!")
 
-		charJob.setStatsWarrior1stJob()
+		charJob.setAdvStats("warrior")
 		charInventory.giveWarrior1stJobItems()
 		charInventory.increaseEQPslots(1)
 		charInventory.increaseUSEslots(1)

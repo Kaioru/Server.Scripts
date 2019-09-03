@@ -7,13 +7,13 @@ self.ask_menu("Have you got something to say?", {
     [0] = "I would like to learn more about pirates.."
 })
 
-if charJob.jobIsBeginner() then
+if charJob.belongsTo("beginner") then
 	self.say("Do you wish to become a Pirate? You'll need to meet our set of standard if you are to become one of us. I need you to be #bat least at Level 10#k. Let's see...")
 	if target.level >= charConstants.getLvlCheckValue("firstJobAdvOther") then
 		self.say("You seem more than qualified! Great, are you ready to become one of us?")
 		self.say("Welcome to the band of Pirates! You may have to spend some time as a wanderer at first, but better days will certainly dawn upon you, sooner than you think! In the mean time, let me share some of my abilities with you.")
 		
-		charJob.setStatsPirate1stJob()
+		charJob.setAdvStats("pirate")
 		charInventory.givePirate1stJobItems()
 		charInventory.increaseEQPslots(1)
 		charInventory.increaseETCslots(1)
