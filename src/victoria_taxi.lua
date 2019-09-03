@@ -14,7 +14,7 @@ fields = {
 self.say("Hello, I drive the #p1022001#. If you want to go from town to town safely and fast, then ride our cab. We'll glady take you to your destination with an affordable price.")
 
 text = "Choose your destination, for fees will change from place to place."
-if charJob.jobIsBeginner() then
+if charJob.belongsTo("begginer") then
     text = "We have a special 90% discount for beginners." .. " " .. text
 	cost = charConstants.getFeeValue("begginerTaxiFee")
 else
