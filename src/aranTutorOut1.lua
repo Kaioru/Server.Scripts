@@ -11,7 +11,7 @@ if quest.state == mapQuests.getState("Perform") then
 	target.modify_skill(20000018, 0, -1)
 	target.modify_skill(20000018, 1, 0)
 	target.play_portal_sound_effect()
-	target.transfer_field(mapFields.getID("BurningForest1"), 1)
+	target.transfer_field(mapFields.getID("BurningForest1"), "sp")
 else
     mapleAdmin.say("You can only exit after you accept the quest from Athena Pierce, who is to your right.")
 end
